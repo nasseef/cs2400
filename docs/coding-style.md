@@ -33,7 +33,7 @@
 
 
   ```
-
+* Use triple slashes `///` for [Doxygen](http://www.doxygen.nl/manual/docblocks.html) style line comments 
 * Always prompt the user for input
 * The program output should be readable and clearly labeled
 * Use lower case letters for identifier names. If an identifier has multiple words, then use one of the styles mentioned above for naming identifiers (example: ```employeeSalary``` instead of ```es```)
@@ -61,7 +61,7 @@
       exit(1);
   }
   ```
-    > Use triple slashes `///` for [Doxygen](http://www.doxygen.nl/manual/docblocks.html) style line comments 
+    
 * Always compile with ```-Wall``` option to detect and eliminate all warnings
 
 ## Classes and Structures
