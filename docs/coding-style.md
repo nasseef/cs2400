@@ -17,11 +17,10 @@
     * Date
     * Description of the program
 * Each statement should be on a line by itself
-* Add documentation for each of the functions under the prototype. For example:
+* Add documentation for each of the functions under the prototype. We will be using [Doxygen](http://www.doxygen.nl/manual/docblocks.html) style of documentation. For example:
 
   ```cpp
-  double finSpaceCost(double distance, double weight);
-  /*
+  /**
    *  Function:   findSpaceCost
    *              calculates and returns the charge for shipping cargo
    *              between two planets.
@@ -30,6 +29,7 @@
    *  @param weight   - weight in pounds of item being shipped
    *  @return - the space cost in dollars
    */
+  double finSpaceCost(double distance, double weight);
 
 
   ```
@@ -79,14 +79,32 @@
   #define STUDENT_H
   class Student {
   public:
-      // Constructors
-      Student();
-      // getters/accessors
+      /** Default constructor
+       * Initializes the id to 0 and the name to "N/A"
+       */ 
+      
+      /** getID - an accessor for the id
+       *  @return - the student's id value
+       */  
       int getId();
+
+      /**
+       * getName - an accessor for the name
+       * @return - the student's name
+       */ 
       string getName();
-      // Setters/mutators
-      void setId();
-      void setName();
+
+      /**
+       * setId - a mutator for the student id
+       * @param newId - the newId must be a valid id >= 0
+       */ 
+      void setId(int newId);
+
+      /**
+       * setName - a mutator for the student name
+       * @param newName - a valid name string != ""
+       */ 
+      void setName(string newName);
 
   private:
       int id;
