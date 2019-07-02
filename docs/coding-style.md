@@ -56,12 +56,12 @@
 
   ```cpp
   inStream.open("somefile.txt");
-  if (inStream.fail()) {
+  if (inStream.fail()) { /// check for failure
       cout << "File is not accessable" << endl;
       exit(1);
   }
   ```
-
+> Use triple slashes `///` for [Doxygen](http://www.doxygen.nl/manual/docblocks.html) style line comments 
 * Always compile with ```-Wall``` option to detect and eliminate all warnings
 
 ## Classes and Structures
