@@ -13,6 +13,8 @@
 
 - [Installing **C/C++** compiler](#Installing-CC-compiler)
 - [Compiling and running the examples in this repository](#Compiling-and-running-the-examples-in-this-repository)
+  - [Generate a `Makefile` and use the `make` command](#Generate-a-Makefile-and-use-the-make-command)
+  - [Running a program:**](#Running-a-program)
 - [Recommended Editors](#Recommended-Editors)
 - [VS Code Customization](#VS-Code-Customization)
   - [Extensions](#Extensions)
@@ -55,7 +57,8 @@ All programs should be compiled with the following command:
 
 > To debug your program, add "-g" option to either of the above commands.
 
-**To generate a `Makefile` and use the `make` command, use the provided `genmake` program**
+#### Generate a `Makefile` and use the `make` command 
+Use the provided `genmake` program
 
 ```console
     ./genmake program.cc
@@ -77,7 +80,7 @@ All programs should be compiled with the following command:
 
 
 
-**To run your program:**
+#### Running a program:**
 
 ```console
     ./a.out (Mac/Linux)
