@@ -58,27 +58,27 @@ To compile with C++11 use the following command:
 To generate a `Makefile` and use the `make` command, use the provided `genmake` program
 
 ```
-./genmake program.cc
+    ./genmake program.cc
 ```
 
 >this will generate a Makefile for your program. You only need to do it once.
 
 To compile your program with make:
 ```
-make
+    make
 ```
 To clean the executables:
 ```
-make clean
+    make clean
 ```
 
 > 
 To run your program:
 
 ```console
-./a.out (Mac/Linux)
+    ./a.out (Mac/Linux)
 
-a.exe   (Windows)
+    a.exe   (Windows)
 ```
 
 ### Recommended Editors
