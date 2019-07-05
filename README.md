@@ -58,7 +58,7 @@ All programs should be compiled with the following command:
 > To debug your program, add "-g" option to either of the above commands.
 
 #### Create a `Makefile` and use the `make` command 
-Create a file called Makefile (no extension). See the sample file to for a program called `test.cc`. [Makefile](docs/Makefile)
+Create a file called `Makefile` (no extension). See the sample file to for a program called `test.cc`. [Makefile](docs/Makefile)
 
 
 **To compile your program with make:**
