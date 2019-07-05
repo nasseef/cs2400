@@ -13,7 +13,7 @@
 
 - [Installing **C/C++** compiler](#Installing-CC-compiler)
 - [Compiling and running the examples in this repository](#Compiling-and-running-the-examples-in-this-repository)
-  - [Generate a `Makefile` and use the `make` command](#Generate-a-Makefile-and-use-the-make-command)
+  - [Create a `Makefile` and use the `make` command](#Create-a-Makefile-and-use-the-make-command)
   - [Running a program:](#Running-a-program)
 - [Recommended Editors](#Recommended-Editors)
 - [VS Code Customization](#VS-Code-Customization)
@@ -57,14 +57,9 @@ All programs should be compiled with the following command:
 
 > To debug your program, add "-g" option to either of the above commands.
 
-#### Generate a `Makefile` and use the `make` command 
-Use the provided `genmake` program
+#### Create a `Makefile` and use the `make` command 
+Create a file called Makefile (no extension). See the sample file to for a program called `test.cc`. [Makefile](docs/Makefile)
 
-```console
-    ./genmake program.cc
-```
-
->this will generate a Makefile for your program. You only need to do it once.
 
 **To compile your program with make:**
 
