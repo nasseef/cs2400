@@ -19,7 +19,7 @@
 - [VS Code Customization](#VS-Code-Customization)
   - [Extensions](#Extensions)
   - [Configure the compiler to run in a terminal](#Configure-the-compiler-to-run-in-a-terminal)
-  - [Configure Code Runner to use `-Wall -g`](#Configure-Code-Runner-to-use--Wall--g)
+  - [Configure Code Runner to use `-Wall -std=c++11 -g`](#Configure-Code-Runner-to-use--Wall--stdc11--g)
   - [Configure the Debugger](#Configure-the-Debugger)
   - [Helpfull user snippets](#Helpfull-user-snippets)
 - [Git/GitHub](#GitGitHub)
@@ -112,7 +112,7 @@ You need a good programming editor (**DO NOT USE WINDOWS Notepad**). I recommend
   - `Save All Files Before Run`
   - `Save File Before Run`
 
-#### Configure Code Runner to use `-Wall -g`
+#### Configure Code Runner to use `-Wall -std=c++11 -g`
 
 - Go to the Settings menu
 - Search for `Executor Map` and click on "Settings.json"
