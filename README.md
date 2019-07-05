@@ -47,7 +47,7 @@ All programs should be compiled with the following command:
     g++ -Wall filename.cc
 ```
 
-To compile with C++11 use the following command:
+**To compile with C++11 use the following command:**
 
 ```console
    g++ -Wall -std=c++11 filename.cc
@@ -55,7 +55,7 @@ To compile with C++11 use the following command:
 
 > To debug your program, add "-g" option to either of the above commands.
 
-To generate a `Makefile` and use the `make` command, use the provided `genmake` program
+**To generate a `Makefile` and use the `make` command, use the provided `genmake` program**
 
 ```console
     ./genmake program.cc
@@ -63,19 +63,21 @@ To generate a `Makefile` and use the `make` command, use the provided `genmake` 
 
 >this will generate a Makefile for your program. You only need to do it once.
 
-To compile your program with make:
+**To compile your program with make:**
 
 ```console
     make
 ```
-To clean the executables:
+
+**To clean the executables:**
 
 ```console
     make clean
 ```
 
-> 
-To run your program:
+
+
+**To run your program:**
 
 ```console
     ./a.out (Mac/Linux)
