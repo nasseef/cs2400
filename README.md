@@ -72,11 +72,6 @@ Use the provided `genmake` program
     make
 ```
 
-**To clean the executables:**
-
-```console
-    make clean
-```
 
 
 
