@@ -14,7 +14,7 @@
 - [Installing **C/C++** compiler](#Installing-CC-compiler)
 - [Compiling and running the examples in this repository](#Compiling-and-running-the-examples-in-this-repository)
   - [Generate a `Makefile` and use the `make` command](#Generate-a-Makefile-and-use-the-make-command)
-  - [Running a program:**](#Running-a-program)
+  - [Running a program:](#Running-a-program)
 - [Recommended Editors](#Recommended-Editors)
 - [VS Code Customization](#VS-Code-Customization)
   - [Extensions](#Extensions)
@@ -80,7 +80,7 @@ Use the provided `genmake` program
 
 
 
-#### Running a program:**
+#### Running a program:
 
 ```console
     ./a.out (Mac/Linux)
