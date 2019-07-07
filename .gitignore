@@ -16,7 +16,8 @@ genmake.cc
 # Precompiled Headers
 *.gch
 *.pch
-
+genmake
+Makefile
 # Compiled Dynamic libraries
 *.so
 *.dylib
