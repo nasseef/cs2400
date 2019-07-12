@@ -12,6 +12,8 @@ genmake.cc
 *.lo
 *.o
 *.obj
+sqlite-ex.cc
+*.db
 
 # Precompiled Headers
 *.gch
