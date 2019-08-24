@@ -17,7 +17,7 @@
     * Date
     * Description of the program
 * Each statement should be on a line by itself
-* Add documentation for each of the functions under the prototype. We will be using [Doxygen](http://www.doxygen.nl/manual/docblocks.html) style of documentation. For example:
+* Add documentation, for each of the functions, above the prototype. We will be using [Doxygen](http://www.doxygen.nl/manual/docblocks.html) style of documentation. The comments should start with `/**`.  For example:
 
   ```cpp
   /**
@@ -31,9 +31,9 @@
    */
   double finSpaceCost(double distance, double weight);
 
-
   ```
-* Use triple slashes `///` for [Doxygen](http://www.doxygen.nl/manual/docblocks.html) style line comments 
+
+* Use triple slashes `///` for [Doxygen](http://www.doxygen.nl/manual/docblocks.html) style line comments
 * Always prompt the user for input
 * The program output should be readable and clearly labeled
 * Use lower case letters for identifier names. If an identifier has multiple words, then use one of the styles mentioned above for naming identifiers (example: ```employeeSalary``` instead of ```es```)
@@ -81,8 +81,8 @@
   public:
       /** Default constructor
        * Initializes the id to 0 and the name to "N/A"
-       */ 
-      
+       */
+
       /** getID - an accessor for the id
        *  @return - the student's id value
        */  
@@ -103,7 +103,7 @@
       /**
        * setName - a mutator for the student name
        * @param newName - a valid name string != ""
-       */ 
+       */
       void setName(string newName);
 
   private:
