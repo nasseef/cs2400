@@ -11,23 +11,23 @@
 
 ---
 
-- [Installing **C/C++** compiler](#Installing-CC-compiler)
-- [Compiling and running the examples in this repository](#Compiling-and-running-the-examples-in-this-repository)
-  - [Create a `Makefile` and use the `make` command](#Create-a-Makefile-and-use-the-make-command)
-  - [Running a program:](#Running-a-program)
-- [Recommended Editors](#Recommended-Editors)
-- [VS Code Customization](#VS-Code-Customization)
-  - [Extensions](#Extensions)
-  - [Configure the compiler to run in a terminal](#Configure-the-compiler-to-run-in-a-terminal)
-  - [Configure Code Runner to use `-Wall -std=c++11 -g`](#Configure-Code-Runner-to-use--Wall--stdc11--g)
-  - [Configure the Debugger](#Configure-the-Debugger)
-  - [Helpfull user snippets](#Helpfull-user-snippets)
-- [Git/GitHub](#GitGitHub)
-  - [Git Installation](#Git-Installation)
-  - [Create a GitHub account](#Create-a-GitHub-account)
-- [Linux Commands and Remote Login/File Transfer](#Linux-Commands-and-Remote-LoginFile-Transfer)
-- [SFTP Client](#SFTP-Client)
-- [Coding Style](#Coding-Style)
+- [Installing **C/C++** compiler](#installing-cc-compiler)
+- [Compiling and running the examples in this repository](#compiling-and-running-the-examples-in-this-repository)
+  - [Create a `Makefile` and use the `make` command](#create-a-makefile-and-use-the-make-command)
+  - [Running a program:](#running-a-program)
+- [Recommended Editors](#recommended-editors)
+- [VS Code Customization](#vs-code-customization)
+  - [Extensions](#extensions)
+  - [Configure the compiler to run in a terminal](#configure-the-compiler-to-run-in-a-terminal)
+  - [Configure Code Runner to use `-Wall -std=c++11 -g`](#configure-code-runner-to-use--wall--stdc11--g)
+  - [Configure the Debugger](#configure-the-debugger)
+  - [Helpfull user snippets](#helpfull-user-snippets)
+- [Git/GitHub](#gitgithub)
+  - [Git Installation](#git-installation)
+  - [Create a GitHub account](#create-a-github-account)
+- [Linux Commands and Remote Login/File Transfer](#linux-commands-and-remote-loginfile-transfer)
+- [SFTP Client](#sftp-client)
+- [Coding Style](#coding-style)
 
 ### Installing **C/C++** compiler
 
@@ -98,7 +98,7 @@ You need a good programming editor (**DO NOT USE WINDOWS Notepad**). I recommend
 
 #### Extensions
 
-- C/C++ extension from Microsoft
+- C/C++ extension from Microsoft (**Important**)
 - Code Runner
 - Trailing Semicolon (recommended)
 - Code Spell Checker
@@ -106,7 +106,7 @@ You need a good programming editor (**DO NOT USE WINDOWS Notepad**). I recommend
 #### Configure the compiler to run in a terminal
 
 - Open `Preferences` and click on `Settings`
-- Find the entry called `Run Code Configuration`
+- Find the entry called `Run Code Configuration` (Available if you installed `Code Runner` extension)
 - Enable the options:
   - `Run in Terminal`
   - `Save All Files Before Run`
@@ -115,7 +115,7 @@ You need a good programming editor (**DO NOT USE WINDOWS Notepad**). I recommend
 #### Configure Code Runner to use `-Wall -std=c++11 -g`
 
 - Go to the Settings menu
-- Search for `Executor Map` and click on "Settings.json"
+- Search for `Code-Runner: Executor Map` and click on "Settings.json"
 - Find `code-runner.executorMap`
 - Click on the edit icon on the left. This should create and entry on the right hand side
 - Modify the `cpp` option to the following:
