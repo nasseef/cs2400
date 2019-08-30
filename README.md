@@ -116,16 +116,15 @@ You need a good programming editor (**DO NOT USE WINDOWS Notepad**). I recommend
 
 - Go to the Settings menu
 - Search for `Code-Runner: Executor Map` and click on "Settings.json"
-- Find `code-runner.executorMap`
-- Click on the edit icon on the left. This should create and entry on the right hand side
-- Modify the `cpp` option to the following:
-
-         "cd $dir && g++ -Wall -std=c++11 -g $fileName && ./a.out"
-
-         On Windows use "a.exe" instead of "./a.out"
-        
-
-    > `-g` option is needed to use a debugger such as `gdb` or `lldb`.
+- Add the following lines in this file and save it.
+  
+  ```json
+  "code-runner.executorMap": {
+        "c": "cd $dir && gcc -Wall $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ -Wall -std=c++11 -g $fileName && ./a.out"
+    }
+  ```
+    > On Windows use "a.exe" instead of "./a.out".   `-g` option is needed to use a debugger such as `gdb` or `lldb`.
 
 #### Configure the Debugger
 
