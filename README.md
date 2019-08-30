@@ -124,7 +124,7 @@ You need a good programming editor (**DO NOT USE WINDOWS Notepad**). I recommend
         "cpp": "cd $dir && g++ -Wall -std=c++11 -g $fileName && ./a.out"
     }
   ```
-    > On Windows use "a.exe" instead of "./a.out".   `-g` option is needed to use a debugger such as `gdb` or `lldb`.
+    > On Windows use `a.exe` instead of `./a.out`.   `-g` option is needed to use a debugger such as `gdb` or `lldb`.
 
 #### Configure the Debugger
 
