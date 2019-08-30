@@ -116,7 +116,7 @@ You need a good programming editor (**DO NOT USE WINDOWS Notepad**). I recommend
 
 - Go to the Settings menu
 - Search for `Code-Runner: Executor Map` and click on `Edit in Settings.json`
-- Add the following lines in this file and save it.
+- To be able to compile and run your program using the `Run Code` icon or the shortcut `Ctrl-Alt N`, add the following lines in `Settings.json` and save it.
   
   ```json
   "code-runner.executorMap": {
