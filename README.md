@@ -115,7 +115,7 @@ You need a good programming editor (**DO NOT USE WINDOWS Notepad**). I recommend
 #### Configure Code Runner to use `-Wall -std=c++11 -g`
 
 - Go to the Settings menu
-- Search for `Code-Runner: Executor Map` and click on `Settings.json`
+- Search for `Code-Runner: Executor Map` and click on `Edit in Settings.json`
 - Add the following lines in this file and save it.
   
   ```json
