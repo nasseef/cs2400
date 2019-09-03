@@ -116,13 +116,13 @@ You need a good programming editor (**DO NOT USE WINDOWS Notepad**). I recommend
 
 - Go to the Settings menu
 - Search for `Code-Runner: Executor Map` and click on `Edit in Settings.json`
-- To be able to compile and run your program using the `Run Code` icon or the shortcut `Ctrl-Alt N`, add the following lines inside the  braces in `Settings.json` and save it.
+- To be able to compile and run your program using the `Run Code` icon or the shortcut `Ctrl-Alt N`, add the following lines right after the opening brace `{`  in `Settings.json` and save it.
   
   ```json
   "code-runner.executorMap": {
         "c": "cd $dir && gcc -Wall $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "cpp": "cd $dir && g++ -Wall -std=c++11 -g $fileName && ./a.out"
-    }
+    },
   ```
     > On Windows use `a.exe` instead of `./a.out`.   `-g` option is needed to use a debugger such as `gdb` or `lldb`.
 
