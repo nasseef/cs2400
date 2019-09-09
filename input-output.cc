@@ -20,6 +20,6 @@ int main(int argc, char const *argv[]) {
     cout << (9 + 5) << endl;
     string name = "Bob";
     cout << "My name is " << name << endl;
-    cout << "My name is " + name << endl;
+
     return 0;
 }// main
