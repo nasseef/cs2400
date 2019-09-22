@@ -3,7 +3,7 @@
  *      Author: Nasseef Abukamail
  *        Date: July 04, 2019
  * Description: Defines colors to be used in C++. Examples are provided 
- *              in the comments below.
+ *              in the comments below. Add this file in the same directory as your project.
  *              To use: #include "colors.h"
  */
 #ifndef COLORS_H
@@ -38,7 +38,7 @@
 
 /* 
  * background colors 
- * Change the background color of the test.
+ * Change the background color of the text.
  * Example 1: Change the background color to red
  *              cout << BRED("Some text");
  * 
@@ -58,6 +58,8 @@
 /*
  * Bold, underline, and inv
  * Example: 
+ *      cout << INV("some text");
+ *      cout << UND("some text");
  *      cout << INV("some text");
  */
 #define BLD(text) "\33[1m" text RST
