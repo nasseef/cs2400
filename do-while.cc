@@ -6,6 +6,7 @@
  */
 
 #include <iostream>
+
 #include <iomanip>
 #include <cstdlib>
 using namespace std;
@@ -18,10 +19,14 @@ int main(int argc, char const *argv[]) {
     do{
         do
         {
-            cout << "Enter a positive number: ";
+            cout << "Enter a number: ";
             cin >> number;
-        }while(number < 0);
+           
+        } while (number < 0);
+        
+
         //process it
+        cout << "You entered " << number << endl;
         cout << "More(y/n)? ";
         cin >> answer;
     }while(answer == 'y' || answer == 'Y');
