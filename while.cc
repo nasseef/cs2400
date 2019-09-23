@@ -32,16 +32,27 @@ int main(int argc, char const *argv[]) {
     // cout << "Total: " << total << endl;
 
 
+    // int number, total = 0;
+    // char answer = 'y';
+    // while (answer == 'y') {
+    //     cout << "Enter a number: ";
+    //     cin >> number;
+    //     total += number;
+    //     cout << "More numbers(y/n)? ";
+    //     cin >> answer;
+    // }
+    // cout << "Total: " << total << endl;
+   
     int number, total = 0;
-    char answer = 'y';
-    while (answer == 'y') {
-        cout << "Enter a number: ";
-        cin >> number;
+    //sentinel loop
+    cout << "Enter a number, negative to quit: ";
+    cin >> number;  //I
+    while (number >= 0) //C
+    {
         total += number;
-        cout << "More numbers(y/n)? ";
-        cin >> answer;
+        cout << "Enter a number, negative to quit: ";
+        cin >> number; //U
     }
     cout << "Total: " << total << endl;
-   
     return 0;
 }  // main
