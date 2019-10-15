@@ -4,14 +4,14 @@
 
 ---
 
-- [Linux command](#linux-command)
-  - [Directory commands](#directory-commands)
-  - [File commands](#file-commands)
-  - [Editing Files](#editing-files)
-  - [Compiling and Running C++ Programs](#compiling-and-running-c-programs)
-- [Remote Login via SSH (Secure Shell)](#remote-login-via-ssh-secure-shell)
-    - [Windows (SSH)](#windows-ssh)
-    - [Mac/Linux (SSH)](#maclinux-ssh)
+- [Ubuntu System Linux Commands, Compiling C++ Programs, & Remote Login](#ubuntu-system-linux-commands-compiling-c-programs--remote-login)
+    - [Contact: Nasseef Abukamail (abukamai@ohio.edu)](#contact-nasseef-abukamail-abukamaiohioedu)
+  - [Linux command](#linux-command)
+    - [Directory commands](#directory-commands)
+    - [File commands](#file-commands)
+    - [Editing Files](#editing-files)
+    - [Compiling and Running C++ Programs](#compiling-and-running-c-programs)
+  - [Remote Login via SSH (Secure Shell)](#remote-login-via-ssh-secure-shell)
 ## Linux command
 
 ### Directory commands
@@ -68,16 +68,8 @@ g++ -std=c++11 -Wall myprogram.cc
 ```
 
 ## Remote Login via SSH (Secure Shell)
-If you are using Windows, download [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). If you are using Linux or a Mac you should already have ```ssh``` installed on your system and it should be accessible from a terminal.
+If you are using Windows, open `PowerShell`. If you are using Linux or a Mac open a terminal window. 
 
-#### Windows (SSH)
-* Run ```Putty.exe```
-* Enter one of our machine addresses ```oddxx.cs.ohio.edu``` (replace ```xx``` with ```01, 03, 05, etc.```)
-* You should be promted for your user name and password
-* After you login you should be in your home directory. You can now execute any of the commands above.
-
-#### Mac/Linux (SSH)
-* Open a terminal window
-* Run the command ```ssh <loginname>@oddxx.cs.ohio.edu``` (make sure you use your login name and replace ```xx``` with ```01, 03, 05, etc.```)
+* Run the command `ssh <loginname>@oddxx.cs.ohio.edu` (make sure you use your login name and replace `xx` with `01, 03, 05, etc.`)
 * After you enter your password you should be in your home directory. You can now execute any of the commands above.
 
