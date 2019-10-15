@@ -31,7 +31,7 @@ but you can use whichever one you prefer.
 
 After setting everything up you should be able to open a terminal that looks similar to:
 
-![terminal example](scr1.PNG)
+![terminal example](WSL_Terminal.png)
 
 To make sure everything is upto date run the command:
 
