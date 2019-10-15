@@ -31,7 +31,7 @@ but you can use whichever one you prefer.
 
 After setting everything up you should be able to open a terminal that looks similar to:
 
-![terminal example](docs/scr1.PNG)
+![terminal example](scr1.PNG)
 
 To make sure everything is upto date run the command:
 
@@ -63,7 +63,7 @@ VSCode is automatically set to work with WSL, so you can just download the regul
 Then using the terminal you can open VSCode with the `code` command and it will automatically open VSCode on Windows. You can even use
 the WSL terminal straight in VSCode:
 
-![example using VSCode with WSL](docs/WSL_VSCode.png)
+![example using VSCode with WSL](WSL_VSCode.png)
 
 ### Accessing your Windows Files
 
