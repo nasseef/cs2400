@@ -46,6 +46,9 @@
 
 - `Windows`: [Installation instructions](docs/installing-minGW.md).
 
+Note: If you have Windows 10 and want a terminal closer to what Mac and Linux has you can follow the instructions [here](docs/Windows10-WSL.md). If you go through the instructions listed there you won't have to install minGW, and you can use the same instructions/commands as
+Linux/Mac that are shown in the rest of this readme.
+
 ### Compiling and running the examples in this repository
 
 These are the programs discussed in class (demos). I encourage you to download them and try them. You may want to modify them and see what happens. Maybe design your own program using the concepts discussed in class.

@@ -36,7 +36,7 @@
 		"   ${1:/*add code*/}",
 		"   return 0;",
 		"}// main"],
-		"description": "Create a keleton C++ program"
+		"description": "Create a skeleton C++ program"
 	},
 
 	"Function": {
