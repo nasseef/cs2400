@@ -14,9 +14,20 @@ using namespace std;
 void add2(int &n);
 void printArray(const int numbers[], int count);
 void loadArray(int numbers[], int &count);
+
 int main(int argc, char const *argv[]) {
     int numbers[20] = {9, 10, 3, 15, 26, 23, 22, 17, 10, 5};
 
+    int scores[3][4] = {{1, 2, 9, 6}, {4, 2, 10, 11}, {9, 6, 7, 4}};
+    
+    for (int i = 0; i < 3; i++)
+    {
+        printArray(scores[i], 4);
+        cout << endl;
+    }
+    
+
+    return 0;
     cout << numbers[3] << endl;
     cout << (numbers[2] * 2) << endl;
     add2(numbers[0]);
