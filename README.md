@@ -203,11 +203,11 @@ Here are some Linux commands and instructions to access our system remotely.
 
 ---
 
-Ocasionaly you need to transer your files from your machine to our Ubuntu system and vice versa. In order to do this you need to use an SFTP (Secure File Transfer Protocol) client. Here are few SFTP clients:
+Occasionally you need to transer your files from your machine to our Ubuntu system and vice versa. In order to do this you need to use an SFTP (Secure File Transfer Protocol) client. Here are few SFTP clients:
 
-- [Cyberduck](https://cyberduck.io/)
-- [FileZilla](https://filezilla-project.org/)
+- [WinSCP (Windows only)](https://winscp.net)
 - [Fetch (Mac only)](https://fetchsoftworks.com/)
+- [Cyberduck](https://cyberduck.io/)
 
 ### Coding Style
 
