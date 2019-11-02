@@ -70,6 +70,5 @@ g++ -std=c++11 -Wall myprogram.cc
 ## Remote Login via SSH (Secure Shell)
 If you are using Windows, open `PowerShell`. If you are using Linux or a Mac open a terminal window. 
 
-* Run the command `ssh <loginname>@oddxx.cs.ohio.edu` (make sure you use your login name and replace `xx` with `01, 03, 05, etc.`)
+* Run the command `ssh <loginname>@pu1.cs.ohio.edu` or `ssh <loginname>@pu2.cs.ohio.edu`(make sure you use your login name.
 * After you enter your password you should be in your home directory. You can now execute any of the commands above.
-
