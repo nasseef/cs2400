@@ -60,6 +60,7 @@ sudo apt install gdb
 ```
 
 Install VSCode if you have not already. In VSCode run the command:
+
 - `shift-ctrl-p` and type `Select Default Shell`.
 - Select `WSL Bash` from the drop-down menu
   
@@ -70,7 +71,7 @@ the WSL terminal straight in VSCode:
 
 ### Accessing your Project Files
 
-The best way to access your Windows files is to open your project directory in VSCode.
+The best way to work with your project files is to open your project directory in VSCode.
 
 - Choose `File` menu and select `Open Folder`. 
   - This will automatically opens a new terminal in the project folder
