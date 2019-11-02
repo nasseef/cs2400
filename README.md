@@ -18,23 +18,25 @@
 
 ---
 
-- [Installing **C/C++** compiler](#installing-cc-compiler)
-- [Compiling and running the examples in this repository](#compiling-and-running-the-examples-in-this-repository)
-  - [Create a `Makefile` and use the `make` command](#create-a-makefile-and-use-the-make-command)
-  - [Running a program:](#running-a-program)
-- [Recommended Editors](#recommended-editors)
-- [VS Code Customization](#vs-code-customization)
-  - [Extensions](#extensions)
-  - [Configure the compiler to run in a terminal](#configure-the-compiler-to-run-in-a-terminal)
-  - [Configure Code Runner to use `-Wall -std=c++11 -g`](#configure-code-runner-to-use--wall--stdc11--g)
-  - [Configure the Debugger](#configure-the-debugger)
-  - [Helpfull user snippets](#helpfull-user-snippets)
-- [Git/GitHub](#gitgithub)
-  - [Git Installation](#git-installation)
-  - [Create a GitHub account](#create-a-github-account)
-- [Linux Commands and Remote Login/File Transfer](#linux-commands-and-remote-loginfile-transfer)
-- [SFTP Client](#sftp-client)
-- [Coding Style](#coding-style)
+- [CS 2400 (Introduction to Computer Science I), Fall 2019, Ohio University, EECS](#cs-2400-introduction-to-computer-science-i-fall-2019-ohio-university-eecs)
+    - [Contact: Nasseef Abukamail (abukamai@ohio.edu)](#contact-nasseef-abukamail-abukamaiohioedu)
+  - [Installing **C/C++** compiler](#installing-cc-compiler)
+  - [Compiling and running the examples in this repository](#compiling-and-running-the-examples-in-this-repository)
+    - [Create a `Makefile` and use the `make` command](#create-a-makefile-and-use-the-make-command)
+    - [Running a program:](#running-a-program)
+  - [Recommended Editors](#recommended-editors)
+  - [VS Code Customization](#vs-code-customization)
+    - [Extensions](#extensions)
+    - [Configure the compiler to run in a terminal](#configure-the-compiler-to-run-in-a-terminal)
+    - [Configure Code Runner to use `-Wall -std=c++11 -g`](#configure-code-runner-to-use--wall--stdc11--g)
+    - [Configure the Debugger](#configure-the-debugger)
+    - [Helpfull user snippets](#helpfull-user-snippets)
+  - [Git/GitHub](#gitgithub)
+    - [Git Installation](#git-installation)
+    - [Create a GitHub account](#create-a-github-account)
+  - [Linux Commands and Remote Login/File Transfer](#linux-commands-and-remote-loginfile-transfer)
+  - [SFTP Client](#sftp-client)
+  - [Coding Style](#coding-style)
 
 ### Installing **C/C++** compiler
 
@@ -142,10 +144,12 @@ the debugger depends on what executable file you set up in the previous step.
 
 - Click on the debug icon on the left
 - Click on the green arrow in the left panel, this should allow you to edit the debug options in "launch.json".
-
+- Select `GDB/LLDB`
+- Select `g++ build and debug active file` 
+  
    - Change the `program` option to:
 
-         "${workspaceFolder}/a.out"
+         "program": "${workspaceFolder}/a.out"
 
         If you are renaming your executable file the same as the name of the program without the extension (for example test.cpp to test), then use the following value:
 

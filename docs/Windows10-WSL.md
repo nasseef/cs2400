@@ -59,16 +59,25 @@ If you want the debugger `gdb` you can also install that:
 sudo apt install gdb
 ```
 
-VSCode is automatically set to work with WSL, so you can just download the regular Windows version of VSCode if you haven't already.
-Then using the terminal you can open VSCode with the `code` command and it will automatically open VSCode on Windows. You can even use
+Install VSCode if you have not already. In VSCode run the command:
+- `shift-ctrl-p` and type `Select Default Shell`.
+- Select `WSL Bash` from the drop-down menu
+  
+Now, VSCode is automatically set to work with WSL. You can use
 the WSL terminal straight in VSCode:
 
 ![example using VSCode with WSL](WSL_VSCode.png)
 
-### Accessing your Windows Files
+### Accessing your Project Files
 
-When you open up WSL for the first time and you check to see what files you have in your home folder (using the `ls` command) you will
-find that there are no files. You can create new files in WSL's home directory, but if you want to access your files already on your
+The best way to access your Windows files is to open your project directory in VSCode.
+
+- Choose `File` menu and select `Open Folder`. 
+  - This will automatically opens a new terminal in the project folder
+
+### Accessing your Windows Files from WSL terminal
+
+If you want to access your files already on your
 hard drive you will have to look in a special directory called `mnt` located in the root folder.
 
 ```bash
