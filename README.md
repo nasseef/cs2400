@@ -46,10 +46,12 @@
     Install Xcode and run it once.
 - `Linux`: Should already come with GNU g++ preinstalled.
 
-- `Windows`: [Installation instructions](docs/installing-minGW.md).
+- `Windows`: 
+  - [Installation instructions](docs/installing-minGW.md).
+  - [Install Windows Subsystem for Linux](docs/Windows10-WSL.md) 
+This will give you a `bash` terminal closer to what Mac and Linux has. If you go through the instructions listed there you won't have to install minGW, and you can use the same instructions/commands as Linux/Mac that are shown in the rest of this readme.
 
-Note: If you have Windows 10 and want a terminal closer to what Mac and Linux has you can follow the instructions [here](docs/Windows10-WSL.md). If you go through the instructions listed there you won't have to install minGW, and you can use the same instructions/commands as
-Linux/Mac that are shown in the rest of this readme.
+
 
 ### Compiling and running the examples in this repository
 
@@ -96,7 +98,7 @@ Create a file called `Makefile` (no extension). See the sample file to for a pro
 
 You need a good programming editor (**DO NOT USE WINDOWS Notepad**). I recommend either Visual Studio Code or Atom. They are both free and highly customizable. See below for other editors.
 
-- [Visual Studio Code](https://code.visualstudio.com/), highly recommended
+- [Visual Studio Code](https://code.visualstudio.com/)
 - [Atom Editor](https://atom.io)
 - [Sublime Text](https://www.sublimetext.com) $$
 - [Emacs](https://www.gnu.org/software/emacs)
