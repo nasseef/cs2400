@@ -8,6 +8,8 @@
 #include <iostream>
 #include <iomanip>
 #include <cstdlib>
+#include <fstream>
+
 using namespace std;
 
 class Rectangle{
@@ -24,6 +26,12 @@ public:
 
     //helper functions
     void output();
+    void area();
+    void perimeter();
+    bool isSquare();
+
+    friend bool operator ==(const Rectangle &r1, const Rectangle &r2);
+    friend ostream & operator <<(ostream & outs, const Rectangle &r);
 private:
     double length;
     double width;
@@ -38,8 +46,19 @@ int main(int argc, char const *argv[]) {
     r.setLength(9);
     r.setWidth(6);
     r.output();
-    Rectangle r2(-20, -10);
+    Rectangle r2(20, 10);
     r2.output();
+    Rectangle r3(22, 10);
+    cout << r3 << endl;
+    
+    if (r2 == r3) //operator== (r2, r3)
+    {   
+        cout << "Equal" << endl;
+    }
+    else {
+        cout << "Not Equal" << endl;
+    }
+    
     return 0;
 }/// main
 
@@ -86,4 +105,18 @@ void Rectangle::setWidth(double newWidth){
     {
        width = newWidth;
     }
+}
+
+bool operator ==(const Rectangle &r1, const Rectangle &r2){
+    if (r1.length == r2.length && r1.width == r2.width)
+    {
+        return true;
+    }
+    return false;
+    
+}
+
+ostream & operator<<(ostream & outs, const Rectangle &r){
+    outs << "(" << r.length << "x" << r.width << ")";
+    return outs;
 }
