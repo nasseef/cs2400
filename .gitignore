@@ -39,3 +39,5 @@ Makefile
 *.exe
 *.out
 *.app
+endl.cc
+overflow.cc
