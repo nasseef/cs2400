@@ -17,5 +17,6 @@
 8. Click `OK` on all the dialog boxes to save the changes.
 
 9.  Restart your terminal and `VSCode` for the changes to take effect.
+10. To verify that the installation is complete, open `PowerShell` and type the command `g++ --version` you should see a reference to `MinGW-W64 project`.
    
     
