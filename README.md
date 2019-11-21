@@ -47,7 +47,7 @@
 - `Linux`: Should already come with GNU g++ preinstalled.
 
 - `Windows`: 
-  - [Installation instructions](docs/installing-minGW.md).
+  - [Installation instructions](docs/installing-minGW64.md).
   - [Install Windows Subsystem for Linux](docs/Windows10-WSL.md) 
 This will give you a `bash` terminal closer to what Mac and Linux has. If you go through the instructions listed there you won't have to install minGW, and you can use the same instructions/commands as Linux/Mac that are shown in the rest of this readme.
 
