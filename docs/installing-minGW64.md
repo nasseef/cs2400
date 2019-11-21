@@ -7,13 +7,15 @@
 4. Select `Edit System Environment Variables`. You should see the following screen:
    ![env-vars.png](env-vars.png)
    
-5. Under system variables (bottom section), edit the `Path` variable click `Edit` then `New` and add the the following path:
+6. You may have to remove the old 32-bit path. Look for it under the `User variables` and under the `System variables`. Do not remove the whole `Path`. You need to edit it and remove old `MinGW` referenced inside of it. It should look something like `C:\MinGW\bin`.
+   
+7. Under system variables (bottom section), edit the `Path` variable click `Edit` then `New` and add the the following path:
     ```console
     C:\Program Files (x86)\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin
     ```
-6. You may have to remove the path entry to the old 32-bit installation. Look for it under the `User variables` and under the `System variables`
-7. Click `OK` on all the dialog boxes to save the changes.
 
-8. Restart your terminal and `VSCode` for the changes to take effect.
+8. Click `OK` on all the dialog boxes to save the changes.
+
+9.  Restart your terminal and `VSCode` for the changes to take effect.
    
     
