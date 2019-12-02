@@ -45,17 +45,26 @@ class Student {
 Student inputStudent();
 
 int main(int argc, char const *argv[]) {
+    vector <Student> allStudents;
     Student s;
     s.output();
     Student s2(333, "Ed");
     s2.output();
    
-
+    allStudents.push_back(s);
+    
     s.setId(123);
     cout << "Id: " << s.getId() << endl;
     s.setName("Jim");
     cout << "Name: " << s.getName() << endl;
-    
+    s.addScore(45);
+    s.addScore(50);
+    s.addScore(80);
+    s.output();
+    cout << endl;
+    s.removeScoreAt(1);
+    s.output();
+    cout << endl;
     return 0;
 }  /// main
 
@@ -129,5 +138,11 @@ void Student::addScore(double newScore){
     if (newScore >= 0)
     {
         scores.push_back(newScore);
+    }
+}
+void Student::removeScoreAt(int index){
+    if (index >= 0 && index < scores.size())
+    {
+        scores.erase(scores.begin()+index);
     }
 }
