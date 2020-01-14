@@ -20,15 +20,15 @@
 
 - [CS 2400 (Introduction to Computer Science I), Spring 2019-2020, Ohio University, EECS](#cs-2400-introduction-to-computer-science-i-spring-2019-2020-ohio-university-eecs)
     - [Contact: Nasseef Abukamail (abukamai@ohio.edu)](#contact-nasseef-abukamail-abukamaiohioedu)
-  - [Installing C/C++ compiler](#installing-cc-compiler)
+  - [Installing **C/C++** compiler](#installing-cc-compiler)
   - [Compiling and running the examples in this repository](#compiling-and-running-the-examples-in-this-repository)
-    - [Create a Makefile and use the make command](#create-a-makefile-and-use-the-make-command)
+    - [Create a `Makefile` and use the `make` command](#create-a-makefile-and-use-the-make-command)
     - [Running a program:](#running-a-program)
   - [Recommended Editors](#recommended-editors)
   - [VS Code Customization](#vs-code-customization)
     - [Extensions](#extensions)
     - [Configure the compiler to run in a terminal](#configure-the-compiler-to-run-in-a-terminal)
-    - [Configure Code Runner to use -Wall -std=c++11 -g](#configure-code-runner-to-use--wall--stdc11--g)
+    - [Configure Code Runner to use `-Wall -std=c++11 -g`](#configure-code-runner-to-use--wall--stdc11--g)
     - [Configure the Debugger](#configure-the-debugger)
     - [Helpfull user snippets](#helpfull-user-snippets)
   - [Git/GitHub](#gitgithub)
@@ -47,7 +47,8 @@
 - `Linux`: Should already come with GNU g++ preinstalled.
 
 - `Windows`: 
-  - [Installation instructions](docs/installing-minGW64.md).
+  - [Install MinGW Compiler](docs/installing-minGW64.md).
+  - Or
   - [Install Windows Subsystem for Linux](docs/Windows10-WSL.md) 
 This will give you a `bash` terminal closer to what Mac and Linux has. If you go through the instructions listed there you won't have to install minGW, and you can use the same instructions/commands as Linux/Mac that are shown in the rest of this readme.
 
