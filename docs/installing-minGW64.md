@@ -7,16 +7,16 @@
 4. Select `Edit System Environment Variables`. You should see the following screen:
    ![env-vars.png](env-vars.png)
    
-5. If you have an older version of MinGW, remove any path that references it.
+> Note: If you have an older version of MinGW installed, remove any path that references it.
    
-6. Under system variables (bottom section), click on the `Path` variable, click `Edit`, then `New`, and add the the following path:
+5. Under system variables (bottom section), click on the `Path` variable, click `Edit`, then `New`, and add the the following path:
     ```console
     C:\Program Files (x86)\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin
     ```
 
-7. Click `OK` on all the dialog boxes to save the changes.
+6. Click `OK` on all the dialog boxes to save the changes.
 
-8.  Restart your terminal and `VSCode` for the changes to take effect.
-9.  To verify that the installation is complete, open `PowerShell` and type the command `g++ --version` you should see a reference to `MinGW-W64 project`.
+7.  Restart your terminal and `VSCode` for the changes to take effect.
+8.  To verify that the installation is complete, open `PowerShell` and type the command `g++ --version` you should see a reference to `MinGW-W64 project`.
    
     
