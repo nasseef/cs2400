@@ -7,7 +7,7 @@
 4. Select `Edit System Environment Variables`. You should see the following screen:
    ![env-vars.png](env-vars.png)
    
-> Note: If you have an older version of MinGW installed, remove any path that references it.
+    > Note: If you have an older version of MinGW installed, remove any path that references it.
    
 5. Under system variables (bottom section), click on the `Path` variable, click `Edit`, then `New`, and add the the following path:
     ```console
