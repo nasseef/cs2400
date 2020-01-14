@@ -82,7 +82,8 @@
       /** Default constructor
        * Initializes the id to 0 and the name to "N/A"
        */
-
+      Student();
+      
       /** getID - an accessor for the id
        *  @return - the student's id value
        */  
