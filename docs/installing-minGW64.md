@@ -3,8 +3,9 @@
 
 1. Download [MinGW-64](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/). Download the file `MinGW-W64-install.exe`
 2. Run the installer and select all the default values
-3. Edit the system environment variables under settings (Search for `Settings: Edit Environment variables`)
-4. Select `Edit System Environment Variables`. You should see the following screen:
+3. Edit the system environment variables under settings (Search for `Edit the system environment variables`)
+   ![edit-env-vars.jpg](edit-env-vars.jpg)
+4. Select `Edit System Environment Variables`.
    ![env-vars.png](env-vars.png)
    
     > Note: If you have an older version of MinGW installed, remove any path that references it.
