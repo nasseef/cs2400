@@ -113,10 +113,10 @@ You need a good programming editor (**DO NOT USE WINDOWS Notepad**). I recommend
 
 #### Extensions
 
-- C/C++ extension from Microsoft (**Important**)
-- Code Runner
+- C/C++ extension from Microsoft (**Required**)
+- Code Runner (recommended)
 - Trailing Semicolon (recommended)
-- Code Spell Checker
+- Code Spell Checker (recommended)
 
 #### Configure the compiler to run in a terminal
 
