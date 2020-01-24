@@ -14,7 +14,7 @@ using namespace std;
 
 int main() {
     //variable declaration
-    double salary;
+    double mySalary;
 
     cout << "Hello World" << '!' << (123.6 + 4) << endl;
     return 0;
