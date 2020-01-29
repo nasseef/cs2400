@@ -9,7 +9,9 @@
 #include <iomanip>
 #include <cstdlib>
 using namespace std;
+///constants are declared globally
 
+const double PI = 3.14159;
 ///function prototypes
 
 int main(int argc, char const *argv[]) {
@@ -23,14 +25,19 @@ int main(int argc, char const *argv[]) {
     cin >> hours;
     if (hours < 0)
     {
-        cout << "Error: hours must be > 0" << endl;
+        cout << "Error: hours must be >= 0" << endl;
         exit(0);
     }
     
     /// read the rate
     cout << "Enter the rate: ";
     cin >> rate;
-
+    if (rate < 0)
+    {
+        cout << "Error: rate must be > 0" << endl;
+        //exit(0);
+    }
+    
     ///cin >> hours >> rate;
     ///2
     wages = hours * rate;
