@@ -17,6 +17,7 @@ using namespace std;
 int main(int argc, char const *argv[]) {
 
     ifstream inStream; 
+    int total = 0;
     int num;
     char ch;
     inStream.open("data.txt");
@@ -27,11 +28,19 @@ int main(int argc, char const *argv[]) {
     }
     //use the file
 
-    inStream >> num;
-    inStream.get(ch);
-    cout << "num = " << num << endl;
-    cout << "ch = " << ch << endl;
-    cout << "Done!" << endl;
+    // inStream >> num;
+    // while (!inStream.eof())
+    // {
+    //     total += num;
+    //     inStream >> num;
+    // }
+    
+    while (inStream >> num)
+    {
+        total += num;
+    }
+    
+    cout << "Total: " << total << endl;
     //close it
     inStream.close();
     return 0;
