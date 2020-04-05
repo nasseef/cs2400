@@ -33,7 +33,7 @@ int main()
 	cout << "The second Ohio is at position " << location << endl;
 	//line1 = "Ohio U. Athens, Ohio.";
 	line1.replace(location, 4, "OH");
-	cout << line1 << endl;
+	cout << line1 << endl; 
 		
 	line1.erase(location, 2);
 	cout << line1 << endl;
