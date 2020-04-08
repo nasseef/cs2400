@@ -65,6 +65,7 @@ void Student::setName(string newName){
     }
 }
 
+
 string Student::getName(){
     return name;
 }
