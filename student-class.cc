@@ -1,5 +1,5 @@
 /**
- *   @file: structures.cc
+ *   @file: student-class.cc
  * @author: Nasseef Abukamail
  *   @date: April 06, 2020
  *  @brief: Add Description
@@ -9,10 +9,15 @@
 #include <iomanip>
 #include <cstdlib>
 #include <vector>
+#include <fstream>
 using namespace std;
 
 class Student{
 public:
+    //constructors
+    Student(); //default constructor
+    Student(int newId, string newName);
+
     //getters/accessors
     int getId();
     string getName();
@@ -23,6 +28,8 @@ public:
     void setName(string newName);
     void setScore(double newScore);
 
+    //helper function
+    void output(ostream &outs);
 private:
     string name;
     int id;
@@ -30,25 +37,53 @@ private:
 };
 
 ///function prototypes
-void printStudent(Student s);
-void inputStudent(Student &s);
+
 int main(int argc, char const *argv[]) {
     Student s;
-    s.setId(123);
-    cout << "Id: " << s.getId() << endl;
+    s.output(cout);
+    s.setId(-123);
     s.setName("");
-    cout << "Name: " << s.getName() << endl;
+    s.setScore(89.0);
+    s.output(cout);
+
+    Student s2(999, "Jim");
+    s2.output(cout);
+    s2.setName("");
+    cout << "**********" << endl;
+    s2.output(cout);
     return 0;
 }/// main
+
+
+Student::Student() {
+    id = 0;
+    name = "NA";
+    score = -1;
+}
+
+
+Student::Student(int newId, string newName){
+    if (newId >= 0){
+        id = newId;
+    }
+    else {
+        id = 0;
+    }
+    if (newName.length() > 0){
+        name = newName;
+    }
+    else {
+        name = "NA";
+    }
+    score = -1;
+}
+
 
 void Student::setId(int newId){
     if (newId >= 0)
     {
         id = newId;
     }
-    else { //either ignore it or assign the default
-        id = 0;
-    }   
 }
 
 int Student::getId(){
@@ -60,18 +95,28 @@ void Student::setName(string newName){
     {
        name = newName;
     }
-    else {
-        name = "N/A"; //set to default
-    }
 }
 
 
 string Student::getName(){
     return name;
 }
-// void printStudent(Student s){
-//     cout << " Name: " << s.name << endl;
-//     cout << "   ID: " << s.id << endl;
-//     cout << "Score: " << s.score << endl;
-// }
+
+
+void Student::setScore(double newScore){
+    if (newScore >= 0)
+    {
+        score = newScore;
+    }
+}
+
+double Student::getScore(){
+    return score;
+}
+
+void Student::output(ostream &outs){
+    outs << " Name: " << name << endl;
+    outs << "   ID: " << id << endl;
+    outs << "Score: " << score << endl;
+}
 
