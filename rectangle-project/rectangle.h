@@ -14,6 +14,12 @@ public:
     //setters
     void setLength(double newLength);
     //helper function
+
+    //Overloading the == operator
+    friend bool operator ==(const Rectangle &r1, const Rectangle &r2);
+    
+    friend ostream & operator <<(ostream &outs, const Rectangle &r);
+
     void output(ostream &outs);
 private:
     double length;

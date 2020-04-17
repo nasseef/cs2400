@@ -19,9 +19,6 @@ Rectangle::Rectangle(double newLength, double newWidth){
     }
 }
 
-void Rectangle::output(ostream &outs){
-    outs << "(" << length << "x" << width << ")";
-}
 
 double Rectangle::getLength(){
     return length;
@@ -32,4 +29,18 @@ void Rectangle::setLength(double newLength){
     {
         length = newLength;
     }
+}
+
+//Overloading the == operator
+bool operator ==(const Rectangle &r1, const Rectangle &r2){
+    if (r1.length == r2.length && r1.width  == r2.width)
+    {
+        return true;
+    }
+    return false;
+}
+
+ostream & operator <<(ostream &outs, const Rectangle &r){
+    outs << "(" << r.length << "x" << r.width << ")";
+    return outs;
 }

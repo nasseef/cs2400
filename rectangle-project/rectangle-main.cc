@@ -15,12 +15,22 @@ using namespace std;
 int main(int argc, char const *argv[]) {
 
     Rectangle r1;
-    r1.output(cout);
+    cout << r1;
     cout << endl;
     Rectangle r2(10, 5);
     r2.setLength(-5); 
-    r2.output(cout);
+    cout << r2;
     cout << endl;
+    Rectangle r3(20, 30);
+    Rectangle r4(20, 10);
+    if (r3 == r4)       
+    {
+        cout << "The two rectangles are equal" << endl;
+    }
+    else {
+        cout << "The two rectangles are NOT equal" << endl;
+    }
+    
     return 0;
 }/// main
 
