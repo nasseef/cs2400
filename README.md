@@ -1,5 +1,5 @@
 
- ## CS 2400 (Introduction to Computer Science I), Spring 2019-2020, Ohio University, EECS
+ ## CS 2400 (Introduction to Computer Science I), Ohio University, EECS
 
  #### Contact: Nasseef Abukamail (abukamai@ohio.edu)
 
@@ -18,7 +18,7 @@
 
 ---
 
-- [CS 2400 (Introduction to Computer Science I), Spring 2019-2020, Ohio University, EECS](#cs-2400-introduction-to-computer-science-i-spring-2019-2020-ohio-university-eecs)
+- [CS 2400 (Introduction to Computer Science I), Ohio University, EECS](#cs-2400-introduction-to-computer-science-i-ohio-university-eecs)
     - [Contact: Nasseef Abukamail (abukamai@ohio.edu)](#contact-nasseef-abukamail-abukamaiohioedu)
   - [Installing **C/C++** compiler](#installing-cc-compiler)
   - [Compiling and running the examples in this repository](#compiling-and-running-the-examples-in-this-repository)
@@ -29,7 +29,7 @@
     - [Extensions](#extensions)
     - [Configure the compiler to run in a terminal](#configure-the-compiler-to-run-in-a-terminal)
     - [Configure Code Runner to use `-Wall -std=c++11 -g`](#configure-code-runner-to-use--wall--stdc11--g)
-    - [Configure the Debugger](#configure-the-debugger)
+    - [Configure the Debugger (Optional)](#configure-the-debugger-optional)
     - [Helpfull user snippets](#helpfull-user-snippets)
   - [Git/GitHub](#gitgithub)
     - [Git Installation](#git-installation)
@@ -141,13 +141,14 @@ You need a good programming editor (**DO NOT USE WINDOWS Notepad**). I recommend
   ```
     > On Windows use `a.exe` instead of `./a.out`.   `-g` option is needed to use a debugger such as `gdb` or `lldb`.
 
-#### Configure the Debugger
+#### Configure the Debugger (Optional)
 
 the debugger depends on what executable file you set up in the previous step.
 
+- For `Mac` download and install `CodeLLDB` extension.
 - Click on the debug icon on the left
 - Click on the green arrow in the left panel, this should allow you to edit the debug options in "launch.json".
-- Select `GDB/LLDB`
+- Select `LLDB` or `GDB`
 - Select `g++ build and debug active file` 
   
    - Change the `program` option to:
@@ -158,10 +159,10 @@ the debugger depends on what executable file you set up in the previous step.
 
          "${workspaceFolder}/${fileBasenameNoExtension}"
 
-   - Make sure you enable `externalConsole`.
+   - Make sure you enable `integrated` terminal.
 
         ```
-        "externalConsole": true,
+        "terminal": "integrated",
         ```
    - Try debugging again and it should work.
 
