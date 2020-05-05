@@ -155,7 +155,7 @@ the debugger depends on what executable file you set up in the previous step.
 
          "program": "${workspaceFolder}/a.out"
 
-        If you are renaming your executable file the same as the name of the program without the extension (for example test.cpp to test), then use the following value:
+        > Use `a.exe` under `Windows`. If you are renaming your executable file the same as the name of the program without the extension (for example test.cpp to test), then use the following value:
 
          "${workspaceFolder}/${fileBasenameNoExtension}"
 
