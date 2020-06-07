@@ -1,6 +1,6 @@
 # settings
 .vscode
-test.*
+test*.*
 genmake.cc
 #debug information
 *.dSYM
