@@ -4,7 +4,7 @@
 ---
 
 * Document every program file. For example,
-  ```
+  ```cpp
   /**
    *  @author: Enter your name
    *    @date: Enter the date         \
@@ -27,7 +27,7 @@
     * Date
     * Description of the program
 * Each statement should be on a line by itself
-* Add documentation, for each of the functions, above the prototype. We will be using [Doxygen](http://www.doxygen.nl/manual/docblocks.html) style of documentation. The comments should start with `/**`.  For example:
+* Add documentation, for each of the functions, above its prototype. We will be using [Doxygen](http://www.doxygen.nl/manual/docblocks.html) style of documentation. The comments should start with `/**`.  For example:
 
   ```cpp
   /**
