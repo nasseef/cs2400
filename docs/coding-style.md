@@ -6,6 +6,7 @@
 * Document every program file. For example,
   ```cpp
   /**
+   *    @file: File name
    *  @author: Enter your name
    *    @date: Enter the date         \
    *   @brief: Enter a detailed description of the program/file
@@ -86,6 +87,7 @@
 
   ```cpp
   /**
+   *    @file: File name
    *  @author: Enter your name
    *    @date: Enter the date         \
    *   @brief: Enter a detailed description of the class
