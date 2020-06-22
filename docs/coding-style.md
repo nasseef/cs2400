@@ -3,6 +3,16 @@
 
 ---
 
+* Document every program file. For example,
+  ```
+  /**
+   *  @author: Enter your name
+   *    @date: Enter the date         \
+   *   @brief: Enter a detailed description of the program/file
+   *  
+   */
+   ```
+
 * Use a consistant style for naming identifiers
   * ```camelCase``` or ```snake_case```
 * Use meaningful variable names that describe the content of the variable, the purpose of the function, or the class.
@@ -75,6 +85,12 @@
 * Class example:
 
   ```cpp
+  /**
+   *  @author: Enter your name
+   *    @date: Enter the date         \
+   *   @brief: Enter a detailed description of the class
+   *  
+   */
   #ifndef STUDENT_H
   #define STUDENT_H
   class Student {
@@ -108,8 +124,8 @@
       void setName(string newName);
 
   private:
-      int id;
-      string name;
+      int id;       // a unique id for a student
+      string name;  // name of the student
   };
   #endif
   ```
