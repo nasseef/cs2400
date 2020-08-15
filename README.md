@@ -97,9 +97,9 @@ Create a file called `Makefile` (no extension). See the sample file to for a pro
 
 ---
 
-You need a good programming editor (**DO NOT USE WINDOWS Notepad**). I recommend either Visual Studio Code or Atom. They are both free and highly customizable. See below for other editors.
+You need a good programming editor (**DO NOT USE WINDOWS Notepad**). I recommend either Visual Studio Code. It is free and highly customizable. See below for other editors.
 
-- [Visual Studio Code](https://code.visualstudio.com/)
+- [Visual Studio Code](https://code.visualstudio.com/) (Recommended)
 - [Atom Editor](https://atom.io)
 - [Sublime Text](https://www.sublimetext.com) $$
 - [Emacs](https://www.gnu.org/software/emacs)
@@ -175,11 +175,10 @@ VSCode already has built-in snippets such as a *for* loop, *class*, etc. However
 
 We will be using Git/GitHub for version/source control (track changes to code). Here are some excellent tutorials that introduce the concepts and shows the most important commands you need to learn.
 
-https://www.youtube.com/watch?v=HVsySz-h9r4 
+https://www.youtube.com/watch?v=MJUJ4wbFm_A
 
 https://www.youtube.com/watch?v=uR6G2v_WsRA
 
-https://www.youtube.com/watch?v=MJUJ4wbFm_A
 
 #### Git Installation
 
