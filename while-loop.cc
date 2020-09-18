@@ -30,7 +30,6 @@ int main(int argc, char const *argv[]) {
     {
         count++;
         total += score;
-       
         cin >> score; //update
     }
     
