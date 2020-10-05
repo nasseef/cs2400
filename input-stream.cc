@@ -15,15 +15,61 @@ using namespace std;
 
 int main(int argc, char const *argv[]) {
     ifstream inStream;
-    inStream.open("data.txt");
-    string line;
+    string filename;
+    cout << "Enter the file name: ";
+    cin >> filename;
 
-    getline(inStream, line);
-    cout << "Line: " << line << endl;
-    getline(inStream, line);
-    cout << "Line: " << line << endl;
-    getline(inStream, line);
-    cout << "Line: " << line << endl;
+    inStream.open(filename);
+    if (inStream.fail())
+    {
+        cout << "Error: file failed to open" << endl;
+        exit(0);
+    }
+    
+    // int number;
+    // int count = 0;
+    // int total = 0;
+    // while (inStream >> number)  
+    // {
+    //     count++;
+    //     total += number;
+    // }
+    // cout << "count: " << count << endl;
+    // cout << "total: " << total << endl;
+
+    char ch;
+    while(inStream.get(ch)){
+        cout << ch;
+    }
+
+    // string line;
+    // while(getline(inStream, line)){
+    //     cout << line << endl;
+    // }
+
+    // getline(inStream, line);
+    // while (!inStream.eof())
+    // {
+    //     cout << line << endl;
+    //     getline(inStream, line);
+    // }
+    
+    // inStream >> number;
+    // while (!inStream.eof())
+    // {
+    //     count++;
+    //     total += number;
+    //     inStream >> number;
+    // }
+    
+    // cout << "count: " << count << endl;
+    // cout << "total: " << total << endl;
+    // getline(inStream, line);
+    // cout << "Line: " << line << endl;
+    // getline(inStream, line);
+    // cout << "Line: " << line << endl;
+    // getline(inStream, line);
+    // cout << "Line: " << line << endl;
 
     // int number;
 
@@ -45,5 +91,6 @@ int main(int argc, char const *argv[]) {
     // inStream >> number;
     // cout << "The number is " << number << endl;
     inStream.close();
+    
     return 0;
 } /// main
