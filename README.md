@@ -30,6 +30,8 @@
     - [Configure the compiler to run in a terminal](#configure-the-compiler-to-run-in-a-terminal)
     - [Configure Code Runner to use `-Wall -std=c++11 -g`](#configure-code-runner-to-use--wall--stdc11--g)
     - [Configure the Debugger (Optional)](#configure-the-debugger-optional)
+      - [Mac Setup](#mac-setup)
+      - [Windows Setup](#windows-setup)
     - [Helpfull user snippets](#helpfull-user-snippets)
   - [Git/GitHub](#gitgithub)
     - [Git Installation](#git-installation)
@@ -144,27 +146,28 @@ You need a good programming editor (**DO NOT USE WINDOWS Notepad**). I recommend
 #### Configure the Debugger (Optional)
 
 the debugger depends on what executable file you set up in the previous step.
-
-- For `Mac` download and install `CodeLLDB` extension.
+##### Mac Setup
 - Click on the debug icon on the left
-- Click on the green arrow in the left panel, this should allow you to edit the debug options in "launch.json".
-- Select `LLDB` or `GDB`
-- Select `g++ build and debug active file` 
+- Click on `Run and Debug`
+- Seclect `C++ (GDB/LLDB)
+- Select `g++ - Build and debug active file`
+- Edit the file `launch.json` and change the line
+  - "externalConsole": false,
+  to
+  "externalConsole": true,
+
+Input interaction will be done in an external terminal window.
+
+##### Windows Setup
+- Click on the debug icon on the left
+- Click on `Run and Debug`
+- Seclect `C++ (GDB/LLDB)
+- Select `g++.exe - Build and debug active file`
   
-   - Change the `program` option to:
 
-         "program": "${workspaceFolder}/a.out"
+From this point on, you can click on the green arrow to start debugging. Make sure you set a break point. To set a break point inside your code, click to the left of the line number. A red circle should appear.
 
-        > Use `./a.exe` under `Windows`. If you are renaming your executable file the same as the name of the program without the extension (for example test.cpp to test), then use the following value:
 
-         "${workspaceFolder}/${fileBasenameNoExtension}"
-
-   - Make sure you enable `integrated` terminal.
-
-        ```
-        "terminal": "integrated",
-        ```
-   - Try debugging again and it should work.
 
 #### Helpfull user snippets
 VSCode already has built-in snippets such as a *for* loop, *class*, etc. However, you can create your own. Open **User Snippets** under **Preferences**. If you are editing a C++ file then the file **cpp.json** should open automatically. Otherwise, you may have to select it. Here is a sample of snippets that I use [cpp-snippets.json](docs/cpp-snippets.json).
