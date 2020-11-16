@@ -8,8 +8,9 @@
 #include <iostream>
 #include <iomanip>
 #include <cstdlib>
+#include <fstream>
 #include "student.h"
-#include "student.h"
+
 
 using namespace std;
 
@@ -19,11 +20,19 @@ int main(int argc, char const *argv[]) {
 
     Student s; //call the default constructor
     //use s
-    s.output();
+    ofstream outs;
+    outs.open("output.txt");
+    if (outs.fail())
+    {
+        cout << "Error opening the file" << endl;
+        exit(0);
+    }
+    
+    s.output(outs);
     
     Student s2("Mary", 345, -99);
     s2.setId(-99);
-    s2.output();
+    s2.output(cout);
     
     return 0;
 } /// main

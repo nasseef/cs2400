@@ -2,12 +2,13 @@
  *   @file: student-class.cc
  * @author: Nasseef Abukamail
  *   @date: November 06, 2020
- *  @brief: Add Description
+ *  @brief: Header file for Student class
  */
 #ifndef STUDENT_H
 #define STUDENT_H 
 
 #include <iostream>
+#include <fstream>
 
 using namespace std;
 
@@ -34,7 +35,7 @@ public:
     double getScore();
 
     //helper functions
-    void output();
+    void output(ostream &out);
     void input();
     char getGrade();
 private:

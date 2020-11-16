@@ -2,12 +2,13 @@
  *   @file: student.cc
  * @author: Nasseef Abukamail
  *   @date: November 13, 2020
- *  @brief: Add Description
+ *  @brief: Implementation of the student class
  */
 
 #include <iostream>
 #include <iomanip>
 #include <cstdlib>
+#include <fstream>
 #include "student.h"
 
 using namespace std;
@@ -69,8 +70,8 @@ string Student::getName(){
     return name;
 }
 
-void Student::output(){
-    cout << " Name: " << name << endl;
-    cout << "   ID: " << id << endl;
-    cout << "Score: " << score << endl;
+void Student::output(ostream &out){
+    out << " Name: " << name << endl;
+    out << "   ID: " << id << endl;
+    out << "Score: " << score << endl;
 }
