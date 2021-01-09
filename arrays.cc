@@ -21,7 +21,7 @@ int main(int argc, char const *argv[]) {
     int numbers[SIZE]; //garbage in positions 5-9, 10 elements
 
     int count;
-
+    
     inputArray(numbers, count);
 
     cout << "Count is " << count << endl;

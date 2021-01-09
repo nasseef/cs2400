@@ -29,7 +29,7 @@
     - [Extensions](#extensions)
     - [Configure the compiler to run in a terminal](#configure-the-compiler-to-run-in-a-terminal)
     - [Configure Code Runner to use `-Wall -std=c++11 -g`](#configure-code-runner-to-use--wall--stdc11--g)
-    - [Configure the Debugger (Optional)](#configure-the-debugger-optional)
+    - [Configure the Debugger](#configure-the-debugger)
       - [Mac Setup](#mac-setup)
       - [Windows Setup](#windows-setup)
     - [Helpfull user snippets](#helpfull-user-snippets)
@@ -143,7 +143,7 @@ You need a good programming editor (**DO NOT USE WINDOWS Notepad**). I recommend
   ```
     > On Windows use `./a.exe` instead of `./a.out`.   `-g` option is needed to use a debugger such as `gdb` or `lldb`.
 
-#### Configure the Debugger (Optional)
+#### Configure the Debugger
 
 the debugger depends on what executable file you set up in the previous step.
 ##### Mac Setup
