@@ -67,10 +67,9 @@ void copy(ifstream &ins, ofstream &outs){
 
 void copyString(ifstream &ins, ofstream &outs){
     string line;
-    getline(ins, line); //same as >> except it reads white spaces
-    while (!ins.eof())
+    
+    while (getline(ins, line)) //ICU
     {
         outs << line << endl;
-        getline(ins, line);
     }
 }
