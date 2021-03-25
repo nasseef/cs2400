@@ -11,10 +11,11 @@
 using namespace std;
 
 /// Constants and function prototypes
-void printNumbers(int numbers[], int count);
+void printNumbers(const int numbers[], int count);
 void readNumbers(int numbers[], int &count);
 
-int getTotal(int numbers[], int count);
+int getTotal(const int numbers[], int count);
+
 int main(int argc, char const *argv[]) {
     // 7 is the maximum size of the array
     int numbers[100]; // = {12, 9, 2, 16, 3, 15, 20};
@@ -30,7 +31,7 @@ int main(int argc, char const *argv[]) {
     return 0;
 }  /// main
 
-void printNumbers(int numbers[], int count) {
+void printNumbers(const int numbers[], int count) {
     for (size_t i = 0; i < count; i++) {
         cout << numbers[i] << endl;
     }
@@ -52,7 +53,7 @@ void readNumbers(int numbers[], int &count){
     
 }
 
-int getTotal(int numbers[], int count){
+int getTotal(const int numbers[], int count){
     int total = 0;
     //size_t ==> unsigned int
     for (size_t i = 0; i < count; i++)
