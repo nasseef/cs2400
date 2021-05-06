@@ -49,7 +49,7 @@
 - `Linux`: Should already come with GNU g++ preinstalled.
 
 - `Windows`: 
-  - [Install MinGW Compiler](docs/installing-minGW64.md).
+  - [Install MinGW Compiler](docs/installing-minGW64.md). (Recommended)
   - Or
   - [Install Windows Subsystem for Linux](docs/Windows10-WSL.md) 
 This will give you a `bash` terminal closer to what Mac and Linux has. If you go through the instructions listed there you won't have to install minGW, and you can use the same instructions/commands as Linux/Mac that are shown in the rest of this readme.
@@ -80,8 +80,13 @@ Create a file called `Makefile` (no extension). See the sample file to for a pro
 
 **To compile your program with make:**
 
+Mac:
 ```console
     make
+```
+Windows:
+```console
+  mingw32-make
 ```
 
 
@@ -103,7 +108,6 @@ You need a good programming editor (**DO NOT USE WINDOWS Notepad**). I recommend
 
 - [Visual Studio Code](https://code.visualstudio.com/) (Recommended)
 - [Atom Editor](https://atom.io)
-- [Sublime Text](https://www.sublimetext.com) $$
 - [Emacs](https://www.gnu.org/software/emacs)
 - [Vim](https://www.vim.org)
 - [nano](https://www.nano-editor.org/)
