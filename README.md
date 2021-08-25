@@ -149,7 +149,7 @@ You need a good programming editor (**DO NOT USE WINDOWS Notepad**). I recommend
 
 #### Configure the Debugger
 
-the debugger depends on what executable file you set up in the previous step.
+the debugger depends on what executable file you set up in the previous step. Make sure you open the folder (not the program) where your program resides. You need to do these steps for every project you want to debug.
 ##### Mac Setup
 - Click on the debug icon on the left
 - Click on `Run and Debug`
