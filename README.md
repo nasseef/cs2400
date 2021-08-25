@@ -45,7 +45,7 @@
 ---
 
 - `Mac`:
-    Install the `Command Line Tools` using the command `xcode-select --install`. This will also install `git`. Alternatively, you can install Xcode and install the `Command Line Tools` after you run it the first time.
+    Start the terminal program (Search for `Terminal`). Install the `Command Line Tools` using the command `xcode-select --install`. This will also install `git`. Alternatively, you can install Xcode and install the `Command Line Tools` after you run it the first time.
 - `Linux`: Should already come with GNU g++ preinstalled.
 
 - `Windows`: 
