@@ -2,6 +2,7 @@
 ### Contact: Nasseef Abukamail (abukamai@ohio.edu)
 
 1. Download [MinGW-64](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/). Download the file `MinGW-W64-install.exe`
+   ![mingw-installer.png](mingw-installer.png)
 2. Run the installer and select all the default values
 3. Edit the system environment variables under settings (Search for: "`Edit the system environment variables`")
    
