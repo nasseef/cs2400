@@ -36,6 +36,7 @@
   - [Git/GitHub](#gitgithub)
     - [Git Installation](#git-installation)
     - [Create a GitHub account](#create-a-github-account)
+    - [Generate a Personal Access Token (PAT) to be able to use GitHub remotely](#generate-a-personal-access-token-pat-to-be-able-to-use-github-remotely)
   - [Linux Commands and Remote Login/File Transfer](#linux-commands-and-remote-loginfile-transfer)
   - [SFTP Client](#sftp-client)
   - [Coding Style](#coding-style)
@@ -200,6 +201,9 @@ https://git-scm.com/download/
 Make sure you create a student account on GitHub using your school email (.edu). You will get the student pack which includes creating private repositories for free. Here is a direct link:
 
 https://education.github.com/students
+
+#### Generate a Personal Access Token (PAT) to be able to use GitHub remotely
+[Personal Access Token](docs/GitHub-token.md)
 
 ### Linux Commands and Remote Login/File Transfer
 
