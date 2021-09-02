@@ -4,7 +4,7 @@ GitHub now requires that users use a Personal Access Token (PAT) to login to Git
 1. Make sure you configured your email and user name on your local machine. Open a terminal window and issue the following commands:
    ```console
            git config --global user.name "Enter your name here"
-           git config --global user.email "Enter the email you use to on GitHub  here"
+           git config --global user.email "Enter the email you used to sign up for GitHub  here"
    ```
 
 2. Verify your settins by issuing the command:
