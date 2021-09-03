@@ -7,7 +7,7 @@ GitHub now requires that users use a Personal Access Token (PAT) to login to Git
            git config --global user.email "Enter the email you used to sign up for GitHub  here"
    ```
 
-2. Verify your settins by issuing the command:
+2. Verify your settings by issuing the command:
    ```console
        git config -l
    ```
