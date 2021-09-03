@@ -20,7 +20,7 @@ GitHub now requires that users use a Personal Access Token (PAT) to login to Git
 7. Click on `Personal access tokens`
 8. Click on `Generate new token`
 9. Write any personal comment in the `Note` section
-10. Set the experation to whatever you prefer so you won't be asked to enter the token every time you login
+10. Set the expiration to whatever you prefer so you won't be asked to enter the token every time you login
 11. Check all the options you would like to control (for now you can check all options)
 12. Click on `Generate token`
 13. Copy the token to the clipboard
