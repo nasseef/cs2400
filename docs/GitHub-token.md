@@ -24,7 +24,7 @@ GitHub now requires that users use a Personal Access Token (PAT) to login to Git
 11. Check all the options you would like to control (for now you can check all options)
 12. Click on `Generate token`
 13. Copy the token to the clipboard
-14. In the terminal when asked for the password click `Ctrl-v` to paste the token you just copied
+14. In the terminal, when asked for the password click `Ctrl-v` to paste the token you just copied
     > Note the password will not show anything
 
 That's it. You will not be prompted for the password every time you access GitHub from the terminal
