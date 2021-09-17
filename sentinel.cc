@@ -22,7 +22,7 @@ int main(int argc, char const *argv[]) {
     cin >> number;
     while (number >= 0)
     {
-        total += number;
+        total += number; 
         count++;
         //cout << "Enter a number: ";
         cin >> number;
