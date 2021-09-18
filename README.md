@@ -160,7 +160,7 @@ The debugger depends on what executable file you set up in the previous step. Ma
 - Seclect `C++ (GDB/LLDB)
 - Select `lldb - Build and debug active file`
 - Edit the file `launch.json` inside the `.vscode` directory and make the following changes:
-```jason
+```json
   "configurations": [
         {
             "name": "clang++ - Build and debug active file",
@@ -187,7 +187,7 @@ The debugger depends on what executable file you set up in the previous step. Ma
                 "${fileDirname}/a.out"
           ],
   ```
-  
+
 ##### Windows Setup
 - Click on the debug icon on the left
 - Click on `Run and Debug`
