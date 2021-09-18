@@ -159,7 +159,7 @@ The debugger depends on what executable file you set up in the previous step. Ma
 - Click on `Run and Debug`
 - Seclect `C++ (GDB/LLDB)
 - Select `lldb - Build and debug active file`
-- Edit the file `launch.json` and make the following changes
+- Edit the file `launch.json` inside the `.vscode` directory and make the following changes:
 ```jason
   "configurations": [
         {
@@ -178,7 +178,16 @@ The debugger depends on what executable file you set up in the previous step. Ma
 ```
 
 > Input interaction will be done in the terminal window within VScode.
-
+- Edit the `tasks.json` file inside the `.vscode` directory and change the `args` section to the following:
+  ```json
+  "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/a.out"
+          ],
+  ```
+  
 ##### Windows Setup
 - Click on the debug icon on the left
 - Click on `Run and Debug`
