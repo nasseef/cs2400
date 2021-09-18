@@ -154,16 +154,30 @@ You need a good programming editor (**DO NOT USE WINDOWS Notepad**). I recommend
 
 The debugger depends on what executable file you set up in the previous step. Make sure you open the folder (not the program) where your program resides. You need to do these steps for every project you want to debug.
 ##### Mac Setup
+- Install the extension `CodeLLDB`
 - Click on the debug icon on the left
 - Click on `Run and Debug`
 - Seclect `C++ (GDB/LLDB)
-- Select `g++ - Build and debug active file`
-- Edit the file `launch.json` and change the line
-  - "externalConsole": false,
-  to
-  "externalConsole": true,
+- Select `lldb - Build and debug active file`
+- Edit the file `launch.json` and make the following changes
+```jason
+  "configurations": [
+        {
+            "name": "clang++ - Build and debug active file",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${fileDirname}/a.out",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "C/C++: clang++ build active file"
+        }
+```
 
-Input interaction will be done in an external terminal window.
+> Input interaction will be done in the terminal window within VScode.
 
 ##### Windows Setup
 - Click on the debug icon on the left
