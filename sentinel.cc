@@ -19,13 +19,13 @@ int main(int argc, char const *argv[]) {
     int count = 0;
     double average;
     cout << "Enter some numbers terminated by a negative: ";
-    cin >> number;
-    while (number >= 0)
+    cin >> number;  //1
+    while (number >= 0) //2
     {
-        total += number; 
+        total += number; //3 process
         count++;
         //cout << "Enter a number: ";
-        cin >> number;
+        cin >> number; //4 update
     }
     cout << "Total is " << total << endl;
     if (count > 0)
