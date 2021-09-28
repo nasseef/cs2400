@@ -5,11 +5,7 @@
  * Description: A program to demonstrate overloaded functions.
  */
 
-/*
- * Extra credit due on Wednesday 10:45 AM. Be one of the first 10 students
- * to receive the extra credit.
- *
- */
+
 
 #include <cstdlib>
 #include <iomanip>
