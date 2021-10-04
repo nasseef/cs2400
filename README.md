@@ -31,7 +31,7 @@
     - [Configure Code Runner to use `-Wall -std=c++11 -g`](#configure-code-runner-to-use--wall--stdc11--g)
     - [Configure the Debugger](#configure-the-debugger)
       - [Mac Setup](#mac-setup)
-      - [Windows Setup](#windows-setup)
+      - [Windows/Linux Setup](#windowslinux-setup)
     - [Helpfull user snippets](#helpfull-user-snippets)
   - [Git/GitHub](#gitgithub)
     - [Git Installation](#git-installation)
@@ -188,11 +188,11 @@ The debugger depends on what executable file you set up in the previous step. Ma
           ],
   ```
 
-##### Windows Setup
+##### Windows/Linux Setup
 - Click on the debug icon on the left
 - Click on `Run and Debug`
 - Seclect `C++ (GDB/LLDB)
-- Select `g++.exe - Build and debug active file`
+- Select `g++/g++.exe - Build and debug active file`
   
 
 From this point on, you can click on the green arrow to start debugging. Make sure you set a break point. To set a break point inside your code, click to the left of the line number. A red circle should appear.
