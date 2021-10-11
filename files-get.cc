@@ -6,19 +6,21 @@
  */
 
 #include <cstdlib>
-#include <fstream>
 #include <iomanip>
 #include <iostream>
-
+//1 
+#include <fstream>
 using namespace std;
 
 /// Constants and function prototypes
 
 int main(int argc, char const *argv[]) {
+    //2. create the stream objects
     ifstream inStream;
     string filename;
     cout << "Enter the file name: ";
     cin >> filename;
+    //3. open the stream
     inStream.open(filename);
     if (inStream.fail())
     {
@@ -34,7 +36,7 @@ int main(int argc, char const *argv[]) {
         exit(0);
     }
     
-    //opening of the stream is successful
+    //4. opening of the stream is successful, use it
     string word;
     char ch;
     inStream.get(ch);
@@ -45,6 +47,7 @@ int main(int argc, char const *argv[]) {
     }
     
     cout << endl;
+    //5. close the streams
     inStream.close();
     outStream.close();
     return 0;
