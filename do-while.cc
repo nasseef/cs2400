@@ -19,7 +19,7 @@ int main(int argc, char const *argv[]) {
         cout << "1. add two numbers" << endl;
         cout << "2. subtract" << endl;
         cout << "3. multiply" << endl;
-        cout << "4. quit" << endl;
+        cout << "4. quit" << endl|;
         cout << "Enter your choice: ";
         cin >> choice;
     }while(choice != 4);
