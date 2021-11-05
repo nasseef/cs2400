@@ -11,7 +11,8 @@
  *                credit they get 10 points. If two people do it, they each get 5 points, etc.
  * 
  *                Post your solution to a GitHub repository and email me a link to it. I will not accept it
- *                in any other ways.
+ *                in any other ways. Email me the link no later than Saturday November 6 (11:59 PM).
+ * 
  */
 
 #include <iostream>
