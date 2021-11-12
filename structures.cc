@@ -28,10 +28,15 @@ int main(int argc, char const *argv[]) {
     Student s;
     s.id = 10;
     s.name = "Bob";
-    s.score = 66;
+    s.score = -66;
 
+    if (s.score < 0)
+    {
+        /* code */
+    }
+    
     Student s2 = {99, "Jim", 86};
-    Student s3 = {88, "Ed", 99};
+    Student s3 = {-88, "Ed", 99};
 
     //printStudent(s);
     //cout << "*****************" << endl;
