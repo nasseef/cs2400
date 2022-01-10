@@ -163,7 +163,7 @@ The debugger depends on what executable file you set up in the previous step. Ma
 ```json
   "configurations": [
         {
-            "name": "clang++ - Build and debug active file",
+            "name": "launch",
             "type": "lldb",
             "request": "launch",
             "program": "${fileDirname}/a.out",
