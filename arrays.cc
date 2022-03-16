@@ -13,7 +13,7 @@ using namespace std;
 
 ///Constants and function prototypes
 
-void printArray(int numbers[], int count);
+void printArray(const int numbers[], int count);
 int getTotal(int numbers[], int count);
 int main(int argc, char const *argv[]) {
 
@@ -21,7 +21,7 @@ int main(int argc, char const *argv[]) {
     int count = 10;
     printArray(numbers, count);
     swap(numbers[0], numbers[5]);
-    printArray(numbers, 5);
+    printArray(numbers, count);
 
     // swap(numbers[1], numbers[2]);
 
@@ -31,7 +31,8 @@ int main(int argc, char const *argv[]) {
     return 0;
 } /// main
 
-void printArray(int numbers[], int count){
+void printArray(const int numbers[], int count){
+    
     for (int i = 0; i < count; i++)
         {
             cout << numbers[i] << " ";
