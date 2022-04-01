@@ -8,6 +8,8 @@
 #include <iostream>
 #include <iomanip>
 #include <cstdlib>
+#include <vector>
+
 using namespace std;
 struct Student{
     string name;
@@ -17,17 +19,35 @@ struct Student{
 ///Constants and function prototypes
 
 void printStudent(const Student &s);
+void printAllStudents(const vector <Student> &v);
 Student getStudent();
-int main(int argc, char const *argv[]) {
-    Student s;
-    s = getStudent();
+//find the average of all students
+//sort all students by name
+//sort all students by id
+//read the data from a file
 
-    printStudent(s);
-    cout << s.name << endl;
+int main(int argc, char const *argv[]) {
+    vector <Student> allStudents;
+
+    Student s = {"George", 999, 99};
+    //s = getStudent();
+
+    allStudents.push_back(s);
+
+    //cout << s.name.at(0) << endl;
+    // printStudent(s);
+    // cout << s.name << endl;
 
     Student s2 = {"Jim", 333, 100};
-    printStudent(s2);
-    /*add code*/
+    Student s3 = {"Ed", 444, 10};
+    Student s4 = {"Mary", 555, 70};
+
+    // printStudent(s2);
+    allStudents.push_back(s2);
+    allStudents.push_back(s3);
+    allStudents.push_back(s4);
+
+    printAllStudents(allStudents);
     return 0;
 } /// main
 
@@ -45,4 +65,11 @@ Student getStudent(){
     cout << "Enter the student's score: ";
     cin >> st.score;
     return st;
+}
+void printAllStudents(const vector <Student> &v){
+    for (size_t i = 0; i < v.size(); i++)
+    {
+        printStudent(v.at(i));
+    }
+    
 }
