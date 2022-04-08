@@ -28,8 +28,12 @@ Student getStudent();
 
 int main(int argc, char const *argv[]) {
     vector <Student> allStudents;
+    string myName;
+    getline(cin, myName);
 
-    Student s = {"George", 999, 99};
+    Student s = {myName, 999, 99};
+    s.id = -9000;
+    s.score = -100;
     //s = getStudent();
 
     allStudents.push_back(s);
