@@ -9,10 +9,17 @@
 #include <iomanip>
 #include <cstdlib>
 #include <vector>
+#include <fstream>
 
 using namespace std;
 class Student{
 public:
+    //Constructors
+    Student(); //default constructor 
+    Student(int newId, string newName);
+    Student(int newId, string newName, double newScore);//exercise 
+    
+    
     //setters/mutators
     void setId(int newID);
     void setName(string newName);
@@ -24,7 +31,8 @@ public:
     double getScore();
 
     //helper function 
-    void output();
+    string toString(); //return all data as one string
+    void output(ostream &out);
 private:
     string name;
     int id;
@@ -41,14 +49,22 @@ private:
 //read the data from a file
 
 int main(int argc, char const *argv[]) {
-    vector <Student> allStudents;
-
+    
     Student s;
-    s.setId(9000);
-    s.setName("Bob");
-    s.setScore(100);
 
-    s.output();
+    s.output(cout);
+
+    s.setId(9000);
+    s.setId(-9000);
+    s.setName("Bob");
+    s.setName("");
+
+    s.setScore(100);
+    s.output(cout);
+
+    Student s2(100, "Jim");
+    s2.output(cout);
+    //s.output();
     
    
 
@@ -75,16 +91,33 @@ int main(int argc, char const *argv[]) {
     return 0;
 } /// main
 
-
-void Student::setId(int newId){
+Student::Student(){
     id = 0;
+    name = "NA";
+    score = -1;
+}
+Student::Student(int newId, string newName){
+    id = 0;
+    if (newId > 0)
+    {
+        id = newId;
+    }
+    
+    name = "NA";
+    if (newName != "")
+    {
+        name = newName;
+    }
+    score = -1;
+}
+void Student::setId(int newId){
+
     if (newId > 0)
     {
         id = newId;
     }
 }
 void Student::setName(string newName){
-    name = "NA";
     if (newName != "")
     {
         name = newName;
@@ -92,7 +125,7 @@ void Student::setName(string newName){
     
 }
 void Student::setScore(double newScore){
-    score = -1;
+
     if (newScore >= 0 && newScore <= 100)
     {
         score = newScore;
@@ -111,10 +144,10 @@ double Student::getScore(){
     return score;
 }
 
-void Student::output(){
-     cout << "Student Id: " << id << endl;
-    cout << "Student Name: " << name << endl;
-    cout << "Student Score: " << score << endl;
+void Student::output(ostream &out){
+    out << "Student Id: " << id << endl;
+    out << "Student Name: " << name << endl;
+    out << "Student Score: " << score << endl;
     
 }
 // void printStudent(const Student &s){
@@ -139,3 +172,5 @@ void Student::output(){
 //     }
     
 // }
+
+
