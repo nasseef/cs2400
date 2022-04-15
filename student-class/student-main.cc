@@ -11,6 +11,8 @@
 #include <vector>
 #include <fstream>
 #include "student.h"
+#include "student.h"
+
 using namespace std;
 
 int main(int argc, char const *argv[]) {

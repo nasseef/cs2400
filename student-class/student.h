@@ -1,3 +1,5 @@
+#ifndef STUDENT_H
+#define STUDENT_H
 #include <iostream>
 #include <fstream>
 
@@ -28,3 +30,4 @@ private:
     int id;
     double score;
 }; //; is required
+#endif
