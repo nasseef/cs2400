@@ -27,7 +27,8 @@ public:
     void setWidth(double newWidth);
 
     //helper functions
-    void output(ostream &out) const;
+    friend ostream & operator <<(ostream &out, const Rectangle &r);
+    friend istream & operator >>(istream &inp, Rectangle &r);
     double area();
     double perimeter();
     bool isSquare();
@@ -45,11 +46,11 @@ private:
 int main(int argc, char const *argv[]) {
     Rectangle r1(8, 5);
     cout << "Rectangle r1: ";
-    r1.output(cout);
-    cout << endl;
+    cout << "Rectangle 1: " << r1 << endl;
+    
     Rectangle r2(8, 5);
     cout << "Rectangle r2: ";
-    r2.output(cout);
+    cout << r2;
     cout << endl;
     if (r1 == r2)
     {
@@ -59,6 +60,11 @@ int main(int argc, char const *argv[]) {
         cout << "Not equal" << endl;
     }
     
+    int x = 5;
+    int y = x < 5 ? 10 : 0;
+    cout << y << endl;
+    
+
     return 0;
 } /// main
 
@@ -93,8 +99,9 @@ double Rectangle::getWidth() const {
     return width; 
 }
 
-void Rectangle::output(ostream &out) const{
-    out << "(" << length << "x" << width << ")";
+ostream & operator <<(ostream &out, const Rectangle &r){
+    out << "(" << r.length << "x" << r.width << ")";
+    return out;
 }
 
 bool operator ==(const Rectangle &r1, const Rectangle &r2){
