@@ -1,41 +1,59 @@
 /**
  *   @file: arrays.cc
  * @author: Nasseef Abukamail
- *   @date: March 14, 2022
+ *   @date: March 24, 2020
  *  @brief: Add Description
  */
 
 #include <iostream>
 #include <iomanip>
 #include <cstdlib>
-#include <cmath>
 using namespace std;
 
-///Constants and function prototypes
+///function prototypes
+void printArray(const int numbers[], int numStudents);
+void inputArray(int numbers[], int &numStudents);
 
-void printArray(const int numbers[], int count);
-int getTotal(int numbers[], int count);
 int main(int argc, char const *argv[]) {
+    //declaration
+    int numbers[10] = {15, 20, 5, 35, 30, 10, 25}; //static declaration
+    cout << "First element: " << numbers[2] << endl;
+    numbers[1] = 12;
+    cout << "The number at position 1 is " << numbers[1] << endl;
 
-    int numbers[15] = {12, 9, 3, 16, 10, 1, 4, 6, 8, 15};
-    int count = 10;
-    printArray(numbers, count);
-    swap(numbers[0], numbers[5]);
-    printArray(numbers, count);
+    int numStudents = 7;
+    numbers[numStudents] = 99;
+    numStudents++;
+    printArray(numbers, numStudents);
 
-    // swap(numbers[1], numbers[2]);
-
+    int temp = numbers[0];
+    numbers[0] = numbers[numStudents - 1];
+    numbers[numStudents - 1] = temp;
     
-    
+    inputArray(numbers, numStudents);
+    cout << "Number of students: " << numStudents << endl;
+    printArray(numbers, numStudents);
 
     return 0;
-} /// main
+}/// main
 
-void printArray(const int numbers[], int count){
-    
-    for (int i = 0; i < count; i++)
-        {
-            cout << numbers[i] << " ";
-        }
-        cout << endl;
+void printArray(const int numbers[], int numStudents){
+    for(int i = 0; i < numStudents; i++){
+        cout << numbers[i] << " ";
+    }
+    cout << endl;
 }
+
+void inputArray(int numbers[], int &numStudents){
+    int num;
+    int i = 0;
+    cout << "Enter a number: ";
+    cin >> num;
+    while(num >= 0){
+        numbers[i] = num;
+        i++;
+        cout << "Enter a number: ";
+        cin >> num;
+    }
+    numStudents = i;
+} 

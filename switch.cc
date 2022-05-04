@@ -1,33 +1,35 @@
 /**
  *   @file: switch.cc
  * @author: Nasseef Abukamail
- *   @date: January 31, 2022
+ *   @date: May 16, 2020
  *  @brief: Add Description
  */
 
-#include <iostream>
-#include <iomanip>
 #include <cstdlib>
+#include <iomanip>
+#include <iostream>
 using namespace std;
 
-///Constants and function prototypes
+/// function prototypes
 
 int main(int argc, char const *argv[]) {
-    
     int choice;
-    cout << "Enter a choice: ";
+    cout << "Enter your choice: ";
     cin >> choice;
-    switch(choice){
-        case 1: cout << "choice 1" << endl;
-                break;
-        case 2: cout << "choice 2" << endl;
-                break;
-        case 3: 
-        case 4: cout << "choice 3 or 4" << endl;
-                break;
+    switch (choice) {
+        case 1:
+            cout << "You entered 1" << endl;
+            break;
+        case 2:
+        case 3:
+            cout << "You entered 2, or 3" << endl;
+            break;
+        case 4:
+            cout << "You entered 4" << endl;
+            break;
         default:
-            cout << "you entered something else" << endl;
+            cout << "You entered a choice less than 1 or greater than 4 " << endl;
     }
-    cout << "Done" << endl;
+
     return 0;
-} /// main
+}  /// main

@@ -1,27 +1,25 @@
-/**
- *   @file: random.cc
- * @author: Nasseef Abukamail
- *   @date: September 21, 2020
- *  @brief: Add Description
+/*
+ *        File: random.cc
+ *      Author: Nasseef Abukamail
+ *        Date: May 19, 2020
+ * Description: A program to demonstrate random numbers
  */
 
 #include <iostream>
 #include <iomanip>
 #include <cstdlib>
+#include <ctime>
 using namespace std;
 
-///function prototypes
+//function prototypes
 
 int main(int argc, char const *argv[]) {
-    srand(time(nullptr)); //seeding the random number generator (only once)
-    
-    for (size_t i = 0; i < 10; i++)
+    srand(time(0));
+    for(int i = 0; i < 5; i++)
     {
-        int randomNumber = rand();
-        randomNumber = randomNumber % 6 + 1;
-        cout << "Random number is " << randomNumber << endl;
+        int faceValue = rand() % 6 + 1;
+        cout << "Die face value: " << faceValue << endl;
     }
-    
-    /*add code*/
     return 0;
-} /// main
+}// main
+

@@ -1,8 +1,8 @@
 /**
- *   @file: jump.cc
+ *   @file: summation.cc
  * @author: Nasseef Abukamail
- *   @date: February 07, 2022
- *  @brief: Add Description
+ *   @date: May 18, 2020
+ *  @brief: Use a while loop to find the sum of all values entered.
  */
 
 #include <iostream>
@@ -10,26 +10,20 @@
 #include <cstdlib>
 using namespace std;
 
-///Constants and function prototypes
+///function prototypes
 
 int main(int argc, char const *argv[]) {
 
-    int numValues;
-    int number;
-    int total = 0;
-    cout << "How many integers? ";
-    cin >> numValues;
-    int count = 0;    //initialization step
-    while (count < numValues)  //Condition
-    {
-        cout << "Enter a number: ";
-        cin >> number;
-       total += number;
-       count += 1;     //Update step
+    double score;
+    double total = 0;
+    cout << "Enter a score (negative to quit): ";
+    cin >> score;
+    while(score >= 0) {
+        total = total + score;
+        cout << "Enter a score (negative to quit): ";
+        cin >> score;
     }
-    cout << "Total: " << total << endl;
-    cout << "done" << endl;
+    cout << "The total is " << total << endl;
 
-    
     return 0;
-} /// main
+}/// main

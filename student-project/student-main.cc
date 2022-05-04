@@ -1,7 +1,7 @@
 /**
- *   @file: structure.cc
+ *   @file: student-main.cc
  * @author: Nasseef Abukamail
- *   @date: March 30, 2022
+ *   @date: April 12, 2020
  *  @brief: Add Description
  */
 
@@ -11,30 +11,28 @@
 #include <vector>
 #include <fstream>
 #include "student.h"
-#include "student.h"
-//changed somethin
+
 using namespace std;
 
+///function prototypes
+
 int main(int argc, char const *argv[]) {
-    
     Student s;
-
     s.output(cout);
-
-    s.setId(9000);
-    s.setId(-9000);
-    s.setName("Bob");
+    s.setId(-123);
     s.setName("");
-
-    s.setScore(100);
+    s.setScore(89.0);
     s.output(cout);
 
-    Student s2(100, "Jim");
+    Student s2(999, "Jim");
     s2.output(cout);
-    //s.output();
-    
+    s2.setName("");
+    cout << "**********" << endl;
+    s2.output(cout);
     return 0;
-} /// main
+}/// main
+
+
 
 
 

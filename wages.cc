@@ -1,53 +1,33 @@
 /**
  *   @file: wages.cc
  * @author: Nasseef Abukamail
- *   @date: January 24, 2022
+ *   @date: May 11, 2020
  *  @brief: Add Description
  */
 
-#include <cstdlib>
-#include <iomanip>
 #include <iostream>
+#include <iomanip>
+#include <cstdlib>
 using namespace std;
 
-/// Constants and function prototypes
-const double MAX_HOURS = 70;
+///function prototypes
 
 int main(int argc, char const *argv[]) {
-    // 0. variable decalarations
-    double hours, rate, wages;
-    char answer;
-    do {
-        do {
-            // 1. input the hours
-            cout << "Enter the number of hours: ";
-            cin >> hours;
-            if (hours < 0 || hours > MAX_HOURS)  // invalid?
-            {
-                cout << "Error: hours must be between 0 and 70" << endl;
-            }
-        } while (hours < 0 || hours > MAX_HOURS);
 
-        // 2. input the rate
-        cout << "Enter the hourly rate: ";
-        cin >> rate;
-        if (rate < 0 || rate > 20) {
-            cout << "Error: rate must be between 0 and 20" << endl;
-            exit(0);
-        }
+    //1. Declare variables
+    double hours, rate, pay;
 
-        // 3. Calculations
-        // calculate overtime pay
-        wages = hours * rate;
+    //2. Input the values
+    cout << "Enter the hourly rate: ";
+    cin >> rate;
 
-        // 4. Output
-        cout << fixed << setprecision(2);
-        cout << "Wages: $" << wages << endl;
+    cout << "Enter the number of hours: ";
+    cin >> hours;
 
-        cout << "More calculations (y/n)? ";
-        // cin >> answer;
-        answer = 'y';
-    } while (answer == 'y');
+    //3. Calculate the pay
+    pay = hours * rate;
 
+    //4. Display/output the pay
+    cout << "Your weekly pay is " << pay << endl;
     return 0;
-}  /// main
+}/// main
