@@ -53,11 +53,11 @@
   
   
   - [Install Windows Subsystem for Linux](docs/Windows10-WSL.md) (Recommended)
-  - Or
+  This will give you a `bash` terminal closer to what Mac and Linux has. If you go through the instructions listed there you can use the same instructions/commands as Linux/Mac that are shown in the rest of this readme file.
+
+- Or
   - [Install MinGW Compiler](docs/installing-minGW64.md). (Will not work on some newer Windows machines)
   
-This will give you a `bash` terminal closer to what Mac and Linux has. If you go through the instructions listed there you won't have to install minGW, and you can use the same instructions/commands as Linux/Mac that are shown in the rest of this readme.
-
 
 
 ### Compiling and running the examples in this repository
