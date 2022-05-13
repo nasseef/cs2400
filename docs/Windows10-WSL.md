@@ -1,5 +1,5 @@
 ## Windows Subsystem for Linux
-### Contact: Mark May (mm754313@ohio.edu)
+### Contributers: Mark May (mm754313@ohio.edu), Nasseef Abukamail (abukamai@ohio.edu)
 ---
 <br>
 If you see any mistakes or if there is anything that you think should be added to this please feel free to email me or tag me in a
