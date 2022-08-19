@@ -56,10 +56,6 @@
   
     This will give you a `bash` terminal closer to what Mac and Linux has. If you go through the instructions listed there you can use the same instructions/commands as Linux/Mac that are shown in the rest of this readme file.
 
-- Or
-  - [Install MinGW Compiler](docs/installing-minGW64.md). (Will not work on some newer Windows machines)
-  
-
 
 ### Compiling and running the examples in this repository
 
@@ -85,24 +81,16 @@ Create a file called `Makefile` (no extension). See the sample file to for a pro
 
 **To compile your program with make:**
 
-Mac:
 ```console
     make
 ```
-Windows:
-```console
-  mingw32-make
-```
-
 
 
 
 #### Running a program:
 
 ```console
-    ./a.out (Mac/Linux)
-
-    a.exe   (Windows)
+    ./a.out 
 ```
 
 ### Recommended Editors
