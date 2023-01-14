@@ -113,9 +113,8 @@ You need a good programming editor (**DO NOT USE WINDOWS Notepad**). I recommend
 #### Extensions
 
 - C/C++ extension from Microsoft (**Required**)
-- Code Runner (recommended)
-- Trailing Semicolon (recommended)
-- Code Spell Checker (recommended)
+- Code Runner (optional)
+- Code Spell Checker (optional)
 
 #### Configure the compiler to run in a terminal
 
@@ -232,7 +231,7 @@ Here are some Linux commands and instructions to access our system remotely.
 
 ---
 
-Occasionally you need to transer your files from your machine to our Ubuntu system and vice versa. In order to do this you need to use an SFTP (Secure File Transfer Protocol) client. Here are few SFTP clients:
+Occasionally you need to transfer your files from your machine to our Ubuntu system and vice versa. In order to do this you need to use an SFTP (Secure File Transfer Protocol) client. Here are few SFTP clients:
 
 - [WinSCP (Windows only)](https://winscp.net)
 - [Fetch (Mac only)](https://fetchsoftworks.com/)
