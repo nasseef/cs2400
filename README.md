@@ -213,8 +213,7 @@ https://git-scm.com/download/
 
 - Create a GitHub account here [GitHub](https://github.com)
 
-- #### Generate a Personal Access Token (PAT) to be able to use GitHub remotely
-[Personal Access Token](docs/GitHub-token.md)
+- #### Generate a Personal Access Token (PAT) to be able to use GitHub remotely [Personal Access Token](docs/GitHub-token.md)
 
 ### Linux Commands and Remote Login/File Transfer
 
