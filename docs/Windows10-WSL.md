@@ -32,15 +32,14 @@ run ***PowerShell*** as an administrator.
 
 ![Powershell Admin](powershell-admin.jpg)
 
-## Important
+#### Important 
+> Windows 11 is not compatible with WSL 2. When you follow the installation instructions on Microsoft's site below, make sure you select WSL version 1.
+> For example use 1 instead of 2 in the following command:
 
-Windows 11 is not compatible with WSL 2. When you follow the installation instructions on Microsoft's site below, make sure you select WSL version 1.
-For example use 1 instead of 2 in the following command:
-
-```bash
-wsl -d ubuntu 
-wsl --set-version ubuntu 1
-```
+  ```bash
+  wsl -d ubuntu 
+  wsl --set-version ubuntu 1
+  ```
 
 The download/installation instructions can be found on the Microsoft website [here.](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 When choosing a distribution of Linux to use I recommend using one of the latest versions of Ubuntu since that is what we use in the labs,
