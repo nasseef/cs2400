@@ -38,7 +38,7 @@ run ***PowerShell*** as an administrator.
 
   ```bash
   wsl -d ubuntu 
-  wsl --set-version ubuntu 1
+  wsl --set-default-version 1
   ```
 
 The download/installation instructions can be found on the Microsoft website [here.](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
