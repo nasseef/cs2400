@@ -42,8 +42,9 @@ run ***PowerShell*** as an administrator.
   ```
 
 The download/installation instructions can be found on the Microsoft website [here.](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
-When choosing a distribution of Linux to use I recommend using one of the latest versions of Ubuntu since that is what we use in the labs,
-but you can use whichever one you prefer. 
+When choosing a distribution of Linux to use, I recommend using one of the latest versions of Ubuntu since that is what we use in the labs. However, you can use whichever one you prefer. 
+
+Installation for Windows 11 may not always work. In that case, try the [manual installation](https://learn.microsoft.com/en-us/windows/wsl/install-manual). 
 
 After setting everything up you should be able to open a terminal that looks similar to:
 
