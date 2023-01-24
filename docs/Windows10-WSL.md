@@ -37,7 +37,7 @@ run ***PowerShell*** as an administrator.
 > For example use 1 instead of 2 in the following command:
 
   ```bash
-  wsl -d ubuntu 
+  wsl --install -d ubuntu 
   wsl --set-default-version 1
   ```
 
