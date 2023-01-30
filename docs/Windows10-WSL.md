@@ -33,7 +33,7 @@ run ***PowerShell*** as an administrator.
 ![Powershell Admin](powershell-admin.jpg)
 
 #### Important 
-> Windows 11 is not compatible with WSL 2. When you follow the installation instructions on Microsoft's site below, make sure you select WSL version 1.
+> Your version of Windows 11 may not be compatible with WSL 2. If you're unable to run WSL 2, when you follow the installation instructions on Microsoft's site below, make sure you select WSL version 1.
 > For example use 1 instead of 2 in the following command:
 
   ```bash
