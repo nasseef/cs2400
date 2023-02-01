@@ -36,8 +36,7 @@ int main(int argc, char const *argv[]) {
     wages = hours * rate;
 
     cout << fixed << setprecision(2);  //scientific
-    double x = 12345678910000.345;
-    cout << "x = " << x << endl;
+   
     cout <<"The hourly rate is $" << rate << endl;
 
     cout << "The number of hours is " << hours << endl;
