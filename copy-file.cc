@@ -13,18 +13,22 @@
 using namespace std;
 
 ///Constants and function prototypes
+void copy(ifstream &ins, ofstream &outs);
 
 int main(int argc, char const *argv[]) {
+
     ifstream inStream;
     ofstream outStream;
-    inStream.open("data.txt");
+    string inputFile = argv[1];
+    string outputFile = argv[2];
+    inStream.open(inputFile);
     if (inStream.fail())
     {
         cout << "Error" << endl;
         exit(0);
     }
 
-    outStream.open("output.txt", ios::app);
+    outStream.open(outputFile);
     if (outStream.fail())
     {
         cout << "Error" << endl;
@@ -32,14 +36,19 @@ int main(int argc, char const *argv[]) {
     }
 
     //both files are ready
-    string line;
-    while (getline(inStream, line, '\n'))
-    {
-        outStream << line << endl;
-        
-    }
-    
+   
+    copy(inStream, outStream);
+
     inStream.close();
     outStream.close();
     return 0;
 } /// main
+
+void copy(ifstream &ins, ofstream &outs){
+    string line;
+    while (getline(ins, line, '\n'))
+    {
+        outs << line << endl;
+        
+    }
+}
