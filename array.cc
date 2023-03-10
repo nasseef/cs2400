@@ -11,11 +11,14 @@
 using namespace std;
 
 ///Constants and function prototypes
-
+const int SIZE = 10;
 int main(int argc, char const *argv[]) {
 
-    int numbers[10] = {5, 9, 2, 6, 7};
-    for (size_t i = 0; i < 5; i++)
+    int numbers[SIZE] = {5, 9, 2, 6, 7};
+    int count = 5;
+    numbers[count] = 100;
+    count++;
+    for (size_t i = 0; i < count; i++)
     {
         cout << numbers[i] << endl;
     }
