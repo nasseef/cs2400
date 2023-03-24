@@ -13,7 +13,7 @@ using namespace std;
 
 /// Constants and function prototypes
 void loadData(int numbers[], ifstream &ins, int &count);
-void printArray(int numbers[], int count);
+void printArray(const int numbers[], int count);
 int main(int argc, char const *argv[]) {
     int numbers[10];
     //int total = 0;
@@ -44,7 +44,7 @@ void loadData(int numbers[], ifstream &ins, int &count){
     }
 }
 
-void printArray(int numbers[], int count){
+void printArray(const int numbers[], int count){
     for (size_t i = 0; i < count; i++)
     {
         cout << numbers[i] << " ";
