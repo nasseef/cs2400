@@ -15,9 +15,10 @@ using namespace std;
 ///function prototypes
 void printVector(vector <double> v);
 double getTotal(const vector<double> &v);
-
+void fillVector(vector<int> &randomNumbers, int count);
 
 int main(int argc, char const *argv[]) {
+    srand(time(nullptr));
     vector <double> nums; //empty
 
     vector <int> numbers(5, 99); //creates 5 elements
@@ -45,6 +46,9 @@ int main(int argc, char const *argv[]) {
 
     //remove the second value in nums
     nums.erase(nums.begin() + 1);
+    //erase the first 3 elements
+    nums.erase(nums.begin(), nums.begin() + 3);
+
     cout << "Second element: " << nums.at(1) << endl;
     double total = getTotal(nums);
     cout << "Total: " << total << endl;
@@ -53,19 +57,30 @@ int main(int argc, char const *argv[]) {
     names.push_back("Sue");
     names.push_back("Jack");
     names.push_back("Janet");
+
+    cout << "Initial " << names.at(0).at(0) << endl;
+
     cout << "First name: " << names.front() << endl;
     cout << "Last name: " << names.back() << endl;
 
     vector <string> phones(5, "(000)000-0000"); //creates 5 initialized strings
+
+    vector<int> randomNumbers;
+    fillVector(randomNumbers, 10);
+    for (size_t i = 0; i < 10; i++)
+    {
+        cout << randomNumbers.at(i) << " ";
+    }
+    cout << endl;
     return 0;
 }/// main
 
 void printVector(vector <double> v){
     for (size_t i = 0; i < v.size(); i++)
     {
-        cout << v.at(i) << endl;
+        cout << v.at(i) << " ";
     }
-    
+    cout << endl;
 }
 
 
@@ -75,4 +90,13 @@ double getTotal(const vector<double> &v) {
 		total += v.at(i);
 	}
 	return total;
+}
+
+void fillVector(vector<int> &randomNumbers, int count){
+    for (size_t i = 0; i < count; i++)
+    {
+        int x = rand() % 6 + 1;
+        randomNumbers.push_back(x);
+    }
+    
 }
