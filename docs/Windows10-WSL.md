@@ -1,4 +1,4 @@
-## Windows Subsystem for Linux
+# Windows Subsystem for Linux
 ### Contributers: Mark May (mm754313@ohio.edu), Nasseef Abukamail (abukamai@ohio.edu)
 ---
 <br>
@@ -6,13 +6,22 @@ If you see any mistakes or if there is anything that you think should be added t
 comment. Also please let me know there is anything unclear here.
 
 
-### What is Windows Subsystem for Linux?
+- [Windows Subsystem for Linux](#windows-subsystem-for-linux)
+    - [Contributers: Mark May (mm754313@ohio.edu), Nasseef Abukamail (abukamai@ohio.edu)](#contributers-mark-may-mm754313ohioedu-nasseef-abukamail-abukamaiohioedu)
+  - [What is Windows Subsystem for Linux?](#what-is-windows-subsystem-for-linux)
+  - [Why would I use WSL instead of Command Prompt/Powershell?](#why-would-i-use-wsl-instead-of-command-promptpowershell)
+  - [Download/Installation Instructions](#downloadinstallation-instructions)
+    - [Important](#important)
+  - [Tools](#tools)
+  - [Accessing your Windows Files](#accessing-your-windows-files)
+  - [SSH / SCP](#ssh--scp)
+## What is Windows Subsystem for Linux?
 
 Windows Subsystem for Linux (WSL) is an optional feature for Windows 10 created by Microsoft that will allow you to run a Linux terminal 
 on your computer instead of having to use Command Prompt/Powershell. You can download most Linux programs and even run graphical applications
 if you set it up correctly.
 
-### Why would I use WSL instead of Command Prompt/Powershell?
+## Why would I use WSL instead of Command Prompt/Powershell?
 
 The way that Windows and its command prompt/powershell work is different than how MacOS/Linux terminals work. If you have experience 
 with working with both you might notice the a lot of the commands and programs that are available on MacOS/Linux terminals are vastly
@@ -23,7 +32,7 @@ switching back and forth and using both can be annoying and resource intensive. 
 solution by Microsoft called Windows Subsystem for Linux. It is an optional feature you can enable that will allow you to download a 
 distribution of Linux like Ubuntu onto your computer, and run the terminal as if it was a native Windows application.
 
-### Download/Installation Instructions
+## Download/Installation Instructions
 Note: if you get this error during the installing:
  ```bash 
 The requested operation requires elevation
@@ -32,7 +41,7 @@ run ***PowerShell*** as an administrator.
 
 ![Powershell Admin](powershell-admin.jpg)
 
-#### Important 
+### Important 
 > Your version of Windows 11 may not be compatible with WSL 2. If you're unable to run WSL 2, when you follow the installation instructions on Microsoft's site below, make sure you select WSL version 1.
 > For example use 1 instead of 2 in the following command:
 
@@ -58,7 +67,7 @@ sudo apt-get update
 
 Once you are done installing I recommend pinning it to your taskbar or add a shortcut to your desktop for easy access.
 
-### Tools
+## Tools
 
 After setting everything up you should have access to commands like `git`, `ssh`, and `scp`. You may also need to install the compiler `g++`.
 To do this you can just run the command:
@@ -82,7 +91,7 @@ the WSL terminal straight in VSCode:
 
 ![example using VSCode with WSL](WSL_VSCode.png)
 
-### Accessing your Windows Files
+## Accessing your Windows Files
 
 When you open up WSL for the first time and you check to see what files you have in your home folder (using the `ls` command) you will
 find that there are no files. You can create new files in WSL's home directory, but if you want to access your files already on your
@@ -140,7 +149,7 @@ cd ~/Desktop
 I recommend creating more symbolic links to any other important folders you might need to access regularly. For example, I have links
 to my desktop, my downloads folder, any folders I use for my programming classes, and my documents.
 
-### SSH / SCP
+## SSH / SCP
 
 Now that you have a Linux terminal you can use the `ssh` and `scp` commands to connect to the lab machines without having to download 
 extra SSH/SCP clients like PuTTY or WinSCP/CyberDuck. These commands are the same as if you were using MacOS/Linux. To do this you're
