@@ -179,7 +179,7 @@ The debugger depends on what executable file you set up in the previous step. Ma
   ```
 
 ##### Running The Debugger in WSL
-- Make sure you installed g++ and the debugger when you installed wsl
+- Make sure you installed g++ and the debugger when you installed wsl [https://github.com/nasseef/cs2400/blob/main/docs/Windows10-WSL.md#tools] (https://github.com/nasseef/cs2400/blob/main/docs/Windows10-WSL.md#tools)
 - Open a WSL terminal 
   - Open PowerShell
   - Type `wsl`
