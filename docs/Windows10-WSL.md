@@ -1,5 +1,6 @@
 # Windows Subsystem for Linux
-### Contributers: Mark May (mm754313@ohio.edu), Nasseef Abukamail (abukamai@ohio.edu)
+
+Contributers: Mark May (mm754313@ohio.edu), Nasseef Abukamail (abukamai@ohio.edu)
 ---
 <br>
 If you see any mistakes or if there is anything that you think should be added to this please feel free to email me or tag me in a
@@ -7,7 +8,7 @@ comment. Also please let me know there is anything unclear here.
 
 
 - [Windows Subsystem for Linux](#windows-subsystem-for-linux)
-    - [Contributers: Mark May (mm754313@ohio.edu), Nasseef Abukamail (abukamai@ohio.edu)](#contributers-mark-may-mm754313ohioedu-nasseef-abukamail-abukamaiohioedu)
+  - [Contributers: Mark May (mm754313@ohio.edu), Nasseef Abukamail (abukamai@ohio.edu)](#contributers-mark-may-mm754313ohioedu-nasseef-abukamail-abukamaiohioedu)
   - [What is Windows Subsystem for Linux?](#what-is-windows-subsystem-for-linux)
   - [Why would I use WSL instead of Command Prompt/Powershell?](#why-would-i-use-wsl-instead-of-command-promptpowershell)
   - [Download/Installation Instructions](#downloadinstallation-instructions)
