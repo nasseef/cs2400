@@ -179,11 +179,11 @@ The debugger depends on what executable file you set up in the previous step. Ma
   ```
 
 ##### Running The Debugger in WSL
-- Make sure you installed g++ and the debugger when you installed wsl [https://github.com/nasseef/cs2400/blob/main/docs/Windows10-WSL.md#tools] (https://github.com/nasseef/cs2400/blob/main/docs/Windows10-WSL.md#tools)
+- Make sure you installed g++ and the debugger tools when you installed wsl [https://github.com/nasseef/cs2400/blob/main/docs/Windows10-WSL.md#tools](https://github.com/nasseef/cs2400/blob/main/docs/Windows10-WSL.md#tools)
 - Open a WSL terminal 
   - Open PowerShell
   - Type `wsl`
-- Navigate to the project directory (it helps to create a symbolic link to the directory where you stored all your projects). Instructions on how to create a symbolic link can be found here: [https://github.com/nasseef/cs2400/blob/main/docs/Windows10-WSL.md#accessing-your-windows-files](https://github.com/nasseef/cs2400/blob/main/docs/Windows10-WSL.md#accessing-your-windows-files)
+- Navigate to the project directory (it helps to create a symbolic link to the directory where you stored all your projects). Instructions on how to create a symbolic link can be found here: [https://github.com/nasseef/cs2400/blob/main/docs/Windows10-WSL.md#accessing-your-windows-files] (https://github.com/nasseef/cs2400/blob/main/docs/Windows10-WSL.md#accessing-your-windows-files)
 - Start VS Code from the project directory
 - Example (Assuming your project directory is called `project1`):
   ```console 
