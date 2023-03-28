@@ -31,7 +31,7 @@
     - [Configure Code Runner to use `-Wall -std=c++11 -g`](#configure-code-runner-to-use--wall--stdc11--g)
     - [Configure the Debugger](#configure-the-debugger)
       - [Mac Setup](#mac-setup)
-      - [Windows/Linux Setup](#windowslinux-setup)
+      - [Running The Debugger in WSL](#running-the-debugger-in-wsl)
     - [Helpfull user snippets](#helpfull-user-snippets)
   - [Git/GitHub](#gitgithub)
     - [Git Installation](#git-installation)
@@ -178,14 +178,30 @@ The debugger depends on what executable file you set up in the previous step. Ma
           ],
   ```
 
-##### Windows/Linux Setup
+##### Running The Debugger in WSL
+- Make sure you installed g++ and the debugger when you installed wsl
+- Open a WSL terminal 
+  - Open PowerShell
+  - Type `wsl`
+- Navigate to the project directory (it helps to create a symbolic link to the directory where you stored all your projects). Instructions on how to create a symbolic link can be found here: [https://github.com/nasseef/cs2400/blob/main/docs/Windows10-WSL.md#accessing-your-windows-files](https://github.com/nasseef/cs2400/blob/main/docs/Windows10-WSL.md#accessing-your-windows-files)
+- Start VS Code from the project directory
+- Example (Assuming your project directory is called `project1`):
+  ```console 
+    cd project1
+    code .
+  ```
+  
+- Open the project file `.cc` or `.cpp` file
 - Click on the debug icon on the left
 - Click on `Run and Debug`
-- Seclect `C++ (GDB/LLDB)
-- Select `g++/g++.exe - Build and debug active file`
+- Seclect `C/C++: g++ build and debug active file`
   
+This setup will use your file name as an executable (without the extension). If you want to use `a.out` as your executable, change `${fileBasenameNoExtension}` to `a.out` in the file `.vscode\task.json`.
 
 From this point on, you can click on the green arrow to start debugging. Make sure you set a break point. To set a break point inside your code, click to the left of the line number. A red circle should appear.
+
+> Note: you must open the project folder to debug your project.
+> The above steps must be repeated for every project.
 
 
 
