@@ -54,6 +54,7 @@ for (size_t i = 0; i < 3; i++)
 }
 
 void printVector(const vector <vector <int>> &quizVector){
+
     for (size_t i = 0; i < quizVector.size(); i++)
     {
         for (size_t j = 0; j < quizVector.at(i).size(); j++)

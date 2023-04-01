@@ -22,6 +22,11 @@ int main(int argc, char const *argv[]) {
     string inputFile = argv[1];
     string outputFile = argv[2];
     inStream.open(inputFile);
+    if (inStream.is_open())
+    {
+        /* code */
+    }
+    
     if (inStream.fail())
     {
         cout << "Error" << endl;
