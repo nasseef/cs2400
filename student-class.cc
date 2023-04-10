@@ -16,6 +16,10 @@ using namespace std;
 //creates an new type called Student
 class Student{
 public:
+    //Constructors
+    Student(); //Default constructor (no parameters)
+    Student(int newID, string newName);
+
     //mutator or a setter
     void setId(int newId);
     void setName(string newName);
@@ -24,6 +28,7 @@ public:
     int getId();
     string getName();
     double getScore();
+    void output();
 private:
     string name;
     int id;
@@ -38,9 +43,21 @@ int searchById(const vector <Student> &allStudents, int targetID);
 int main(int argc, char const *argv[]) {
 
     Student s;
-    printStudent(s);
-    s.setId(0);
-    s.setScore(-9);
+    s.output();
+
+
+    Student s2(100, "Sue");
+    s2.output();
+   
+
+    
+    s2.setId(-100);
+    s2.output();
+    s2.setScore(90);
+    s2.setScore(-9);
+    s2.output();
+    
+    return 0;
     s.setName("");
     cout << "Name: " << s.getName() << endl;
     cout << "Score: " << s.getScore() << endl;
@@ -53,23 +70,42 @@ int main(int argc, char const *argv[]) {
     return 0;
 } /// main
 
-void Student::setId(int newId){
+Student::Student(){
+    name = "N/A";
+    id = 0;
+    score = -1;
+}
+
+Student::Student(int newId, string newName){
     id = newId;
-    if (newId < 0)
+    if (id < 0)
     {
-        //default value
         id = 0;
     }
+    name = newName;
+    if (name == "")
+    {
+       name = "N/A";
+    }
+    score = -1;
+    
+}
+void Student::setId(int newId){
+    if (newId >= 0)
+    {
+        //default value
+        id = newId;
+    }
+
 }
 int Student::getId(){
     return id;
 }
 
 void Student::setScore(double newScore){
-    score = newScore;
-    if (score < 0 || score > 100)
+    if (newScore >= 0 && newScore <= 100)
     {
-        score = -1;
+        score = newScore;
     }
 }
 
@@ -78,10 +114,10 @@ double Student::getScore(){
 }
 
     void Student::setName(string newName){
-        name = newName;
-        if (name == "")
+        
+        if (newName != "")
         {
-            name = "N/A";
+            name = newName;
         }
         
     }
@@ -90,9 +126,9 @@ string Student::getName(){
     return name;
 }
 
-void printStudent(Student st){
-    cout << "Name:  " << st.getName() << " ";
-    cout << "ID:    " << st.getId() << " ";
-    cout << "Score: " << st.getScore() << endl;
+void Student::output(){
+    cout << "Name:  " << name << " ";
+    cout << "ID:    " << id << " ";
+    cout << "Score: " << score << endl;
 }
 
