@@ -20,7 +20,6 @@ sqlite-ex.cc
 *.gch
 *.pch
 genmake
-Makefile
 # Compiled Dynamic libraries
 *.so
 *.dylib
