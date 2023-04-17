@@ -8,6 +8,7 @@
 #include <iostream>
 #include <iomanip>
 #include <cstdlib>
+#include <fstream>
 #include "rectangle.h"
 
 using namespace std;
@@ -16,8 +17,35 @@ using namespace std;
 
 int main(int argc, char const *argv[]) {
 
-    Rectangle r;
-    r.output();
+    Rectangle r(10, 5);
+    Rectangle r2(20, 5);
+    // if (equal(r, r2))
+    // {   
+    //    cout << "Equal" << endl;
+    // }
+    // else {
+    //     cout << "Not equal" << endl;
+    // }
+    if (r == r2)
+    {   
+       cout << "Equal" << endl;
+    }
+    else {
+        cout << "Not equal" << endl;
+    }
+    
+    if (2 == 3)
+    {
+        cout << "";
+    }
+    
+    // ofstream out("data.out");
+    r.output(cout);
     cout << endl;
+    // out.close();
+    cout << r.area() << endl;
     return 0;
 } /// main
+
+
+
