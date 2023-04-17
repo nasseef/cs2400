@@ -34,10 +34,6 @@ int main(int argc, char const *argv[]) {
         cout << "Not equal" << endl;
     }
     
-    if (2 == 3)
-    {
-        cout << "";
-    }
     
     // ofstream out("data.out");
     r.output(cout);
