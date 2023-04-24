@@ -22,6 +22,7 @@ public:
     double area();
     //friend bool equal(const Rectangle &r1, const Rectangle &r2);
     friend bool operator ==(const Rectangle &r1, const Rectangle &r2);
+    friend ostream & operator <<(ostream &out, const Rectangle &r);
 private:
     double length;
     double width;

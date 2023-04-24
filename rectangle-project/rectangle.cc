@@ -46,6 +46,11 @@ if (r1.length == r2.length && r1.width == r2.width)
     
 }
 
+    ostream & operator <<(ostream &out, const Rectangle &r){
+        out << "(" << r.length << "x" << r.width << ")";
+        return out;
+    }
+
 // bool equal(const Rectangle &r1, const Rectangle &r2){
 //     if (r1.length == r2.length && r1.width == r2.width)
 //     {

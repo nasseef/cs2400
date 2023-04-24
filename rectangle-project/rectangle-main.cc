@@ -36,8 +36,9 @@ int main(int argc, char const *argv[]) {
     
     
     // ofstream out("data.out");
-    r.output(cout);
-    cout << endl;
+    //r.output(cout);
+    cout << r << endl;
+  
     // out.close();
     cout << r.area() << endl;
     return 0;
