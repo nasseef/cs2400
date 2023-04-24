@@ -18,6 +18,20 @@ double getTotal(const vector<double> &v);
 void fillVector(vector<int> &randomNumbers, int count);
 
 int main(int argc, char const *argv[]) {
+
+    // int x = 2;
+    // string y;
+
+    // y = x % 2 == 0 ? "yes" : "no";
+    // if (x % 2 == 0)
+    // {
+    //     y = "yes";
+    // }
+    // else {
+    //     y = "no";
+    // }
+    
+
     srand(time(nullptr));
     vector <double> nums; //empty
 
@@ -35,7 +49,7 @@ int main(int argc, char const *argv[]) {
     for (size_t i = 0; i < 3; i++){
         nums.push_back(i * i);
     }
-
+    
     nums.at(2) = 70;
     nums[3] = 90;
     cout << "All values in nums: " << endl;
@@ -76,10 +90,16 @@ int main(int argc, char const *argv[]) {
 }/// main
 
 void printVector(vector <double> v){
-    for (size_t i = 0; i < v.size(); i++)
+    // for (auto i = 0; i < v.size(); i++)
+    // {
+    //     cout << v.at(i) << " ";
+    // }
+
+    for (auto element : v)
     {
-        cout << v.at(i) << " ";
+        cout << element;
     }
+    
     cout << endl;
 }
 
