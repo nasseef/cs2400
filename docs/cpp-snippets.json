@@ -1,0 +1,103 @@
+{
+	// Place your snippets for cpp here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+
+	"CPP Program": {
+		"prefix": "prog",
+		"body": [
+		"/**",
+		" *        @file: ${TM_FILENAME}",
+		" *      @author: Nasseef Abukamail",
+		" *        @date: ${CURRENT_MONTH_NAME} ${CURRENT_DATE}, ${CURRENT_YEAR}",
+		" *       @brief: Add Description",
+		" */",
+		"",
+		"#include <iostream>",
+		"#include <iomanip>",
+		"#include <cstdlib>",
+		"using namespace std;",
+		"",
+		"///function prototypes",
+		"",
+		"int main(int argc, char const *argv[]) {",
+		"",
+		"   ${1:/*add code*/}",
+		"   return 0;",
+		"}// main"],
+		"description": "Create a skeleton C++ program"
+	},
+
+	"Function": {
+		"prefix": "fun",
+		"body": [
+			"${1:/*type*/} ${2:/*fun name*/}(${3:/*parameters*/}) {",
+			"",
+			"} //${2:/*fun name*/}"
+			],
+		"description": "Create a skeleton function"
+	},
+	
+	"Int Function": {
+		"prefix": "ifun",
+		"body": [
+			"int ${1:/*fun name*/}(${2:/*parameters*/}) {",
+			"",
+			"    ${3:/*Function body*/}",
+			"    return ${4:/*return value*/};",
+			"",
+			"} //${1:/*fun name*/}"
+		],
+		"description": "Create a skeleton int function"
+	},
+
+	"double Function": {
+		"prefix": "dfun",
+		"body": [
+			"double ${1:/*fun name*/}(${2:/*parameters*/}) {",
+			"",
+			"    ${3:/*Function body*/}",
+			"    return ${4:/*return value*/};",
+			"",
+			"} //${1:/*fun name*/}"
+		],
+		"description": "Create a skeleton double function"
+	},
+
+	"string Function": {
+		"prefix": "sfun",
+		"body": [
+			"string ${1:/*fun name*/}(${2:/*parameters*/}) {",
+			"",
+			"    ${3:/*Function body*/}",
+			"    return ${4:/*return value*/};",
+			"",
+			"} //${1:/*fun name*/}"
+		],
+		"description": "Create a skeleton string function"
+	},
+	"Void Function": {
+		"prefix": "vfun",
+		"body": [
+			"void ${1:/*fun name*/}(${2:/*parameters*/}) {",
+			"",
+			"    ${3:/*TODO: Function body*/}",
+			"",
+			"} //${1:function name}"
+		],
+		"description": "Create a skeleton void function"
+	}
+
+
+}
