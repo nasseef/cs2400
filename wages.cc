@@ -11,6 +11,8 @@
 using namespace std;
 
 ///Constants and function prototypes
+const double MAX_RATE = 30;
+const double MIN_RATE = 10;
 
 int main(int argc, char const *argv[]) {
 
@@ -23,9 +25,10 @@ int main(int argc, char const *argv[]) {
 
     cout << "Enter the rate: ";
     cin >> rate;
-    if (rate <= 0) //invalid
+    //validate the input
+    if (rate < MIN_RATE || rate > MAX_RATE) //invalid
     {
-        cout << "Error: rate must be greater than 0" << endl;
+        cout << "Error: rate must be between " << MIN_RATE << " and " << MAX_RATE << endl;
         exit(0);
     }
     
