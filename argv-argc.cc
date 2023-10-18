@@ -14,8 +14,10 @@ using namespace std;
 
 int main(int argc, char const *argv[]) {
 
+
     cout << "argc = " << argc << endl;
-    cout << "first arg = " << argv[1] << endl;
+    string second = argv[1];
+    cout << "second arg = " << second << endl;
 
     return 0;
 } /// main
