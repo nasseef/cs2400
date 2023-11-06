@@ -31,6 +31,13 @@ int main(int argc, char const *argv[]) {
     printNumbers(numbers);
     auto updatedNumbers = updateByOne(numbers);
     printNumbers(updatedNumbers);
+    updatedNumbers.insert(updatedNumbers.begin(), 99);
+    printNumbers(updatedNumbers);
+
+    vector<string> names = {"Susan", "Jim", "John", "Kate"};
+    int lastIndex = names.at(0).length() - 1;
+
+    cout << names.at(0).at(lastIndex) << endl;
     return 0;
 } /// main
 
