@@ -9,6 +9,7 @@
 #include <iomanip>
 #include <cstdlib>
 #include <vector>
+#include <fstream>
 #include "student.h"
 #include "student.h"
 
@@ -17,15 +18,42 @@ using namespace std;
 
 int main(int argc, char const *argv[]) {
 
-    Student s;  //calls the default constructor
-    Student s2(33, "Sue");
-    s2.output();
-
-    s.setId(33);  //1 or more default 0
-    s.setName("Bob"); //cannot be empty default "N/A"
-    // s.score = -60; //0 or more default -1
-    s.output();
     
+    ifstream ins;
+    ins.open("data.txt");
+    if (ins.fail())
+    {
+        cout << "Error: file not found";
+        exit(0);
+    }
+    int id;
+    string name;
+    double score;
+
+    ins >> id >> score;
+    ins.ignore();
+    getline(ins, name);
+    Student s(id, name, score);
+
+    
+    ins >> id >> score;
+    ins.ignore();
+    getline(ins, name);
+
+    Student s2(id, name, score);
+
+    
+    
+    vector<Student> allStudents;
+    allStudents.push_back(s);
+    allStudents.push_back(s2);
+
+    for (size_t i = 0; i < allStudents.size(); i++)
+    {
+        allStudents.at(i).output();
+    }
+    
+    ins.close();
     return 0;
 } /// main
 

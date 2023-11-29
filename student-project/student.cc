@@ -30,6 +30,21 @@ Student::Student(int newId, string newName){
     score = -1;
     
 }
+Student::Student(int newId, string newName, double newScore){
+    if (newId < 0 || newName == "" || newScore < -1)
+    {
+        id = 0;
+        name = "N/A";
+        score = -1;
+    }
+    else 
+    {
+        id = newId;
+        name = newName;
+        score = newScore;
+    }
+    
+}
 
 void Student::setId(int newId){
     if (newId > 0)

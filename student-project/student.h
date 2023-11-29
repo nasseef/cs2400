@@ -10,6 +10,7 @@ Student();
 Student(int newId, string newName);
 Student(int newId, string newName, double newScore);
 
+
 //setters (Mutators)
 void setId(int newId);
 void setName(string newName);
