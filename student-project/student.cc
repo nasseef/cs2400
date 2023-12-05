@@ -3,8 +3,8 @@
 #include <iomanip>
 #include <cstdlib>
 #include "student.h"
-
-void Student::output(){
+//comment
+void Student::output(){ 
     cout << "ID:    " << id << endl;
     cout << "Name:  " << name << endl;
     cout << "Score: " << score << endl;

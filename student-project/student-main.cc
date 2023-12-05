@@ -15,12 +15,13 @@
 
 using namespace std;
 ///Constants and function prototypes
+//comment
 
 int main(int argc, char const *argv[]) {
 
     
     ifstream ins;
-    ins.open("data.txt");
+    ins.open("data.txt"); 
     if (ins.fail())
     {
         cout << "Error: file not found";
