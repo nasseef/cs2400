@@ -1,9 +1,8 @@
 /*
  *   File Name: formatting.cc
  *      Author: Nasseef Abukamail
- *        Date: September 27, 2023
- * Description: Example program to demonstrate different formatting options in
- * C++.
+ *        Date: February 2, 2024
+ * Description: Example program to demonstrate different formatting options in C++.
  *
  */
 
@@ -14,31 +13,38 @@ using namespace std;
 
 int main() {
     double largeNumber = 12345345678.12355678;
-    cout << "Default display >" << largeNumber << "<" << endl;
-    
+    cout << "Default display (6 digits, scientific)>" << largeNumber << "<" << endl;
+   
     // Use only two digits in Scientific notation
     cout << setprecision(3);
     cout << "Scientific, precision of 3 >" << largeNumber << "<" << endl;
-
     // When using fixed, use two digits after the decimal point
     cout << fixed;
     cout << "Fixed, precision of 3 >" << largeNumber << "<" << endl;
+
     
-    // using setw
+    // using setw right justification (default)
     int intNum = 1234;
     double smallNumber = 3.14159;
-    cout << "setw(10) right justification(default) >" << setw(10) << intNum
+    cout << "setw(10) right justification(default) >" 
+         << setw(10) << intNum
          << setw(10) << smallNumber << "<" << endl;
+     
     
+    ///left justification
     cout << left;
-    cout << "setw(10) left justification >" << setw(10) << intNum << setw(10)
+    cout << "setw(10) left justification >"   
+         << setw(10) << intNum << setw(10)
          << smallNumber << "<" << endl;
+      
 
-    
+    ///changing the fill character for setw
     cout << setfill('*');
-    cout << "setw(10) left justification >" << setw(10) << intNum << setw(10)
+    cout << "setw(10) left justification >" 
+         << setw(10) << intNum << setw(10)
          << smallNumber << "<" << endl;
-
+    
+     
     
     cout << setprecision(2);
     cout << "Your salary is $" << largeNumber << endl;
