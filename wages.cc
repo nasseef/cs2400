@@ -6,38 +6,47 @@
  *          hours worked and the rate of pay.
  */
 
-#include <iostream>
-#include <iomanip>
 #include <cstdlib>
+#include <iomanip>
+#include <iostream>
 using namespace std;
 
-///Constants and function prototypes
+/// Constants and function prototypes
 
 int main(int argc, char const *argv[]) {
-
     double rate, hours, wages;
     cout << fixed << setprecision(2);
+    char answer;
     /// 1. declare variable (memory locations for data)
 
     /// 2. Input data
-    cout << "Enter number of hours: ";
-    cin >> hours;
-    if (hours < 0 || hours > 60) /// testing for invalid hours
-    {
-        cout << "Error: Invalid number of hours" << endl;
-        exit(0);
-    }
-    
-    cout << "Enter the rate: ";
-    cin >> rate;
+    do {
+        cout << "Enter number of hours: ";
+        cin >> hours;
+        if (hours < 0 || hours > 60)  /// testing for invalid hours
+        {
+            cout << "Error: Invalid number of hours" << endl;
+            exit(0);
+        }
 
-    /// 3. Calculate the wages
-    wages = rate * hours;
+        cout << "Enter the rate: ";
+        cin >> rate;
+        if (rate < 10 || rate > 50)  // assume rate range is $10-$50
+        {
+            cout << "Error: Invalid pay rate" << endl;
+            exit(0);
+        }
 
-    /// 4. output results (wages)
-    cout << "Number of hours: " << hours << endl;
-    cout << "The hourly rate: $" << rate << endl;
-    cout << "     Your wages: $" << wages << endl;
+        /// 3. Calculate the wages
+        wages = rate * hours;
 
-    return 0;
-} /// main
+        /// 4. output results (wages)
+        cout << "Number of hours: " << hours << endl;
+        cout << "The hourly rate: $" << rate << endl;
+        cout << "     Your wages: $" << wages << endl;
+        cout << "More calculations (y/n)? ";
+        cin >> answer;
+    }while (answer == 'y');
+            ;
+        return 0;
+    }  /// main
