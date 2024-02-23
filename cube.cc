@@ -17,7 +17,7 @@ int main(int argc, char const *argv[]) {
 
     int number = 5;
     int numberCubed;
-    numberCubed = cube(number);
+    numberCubed = cube(number); //number is an actual parameter or an argument
     cout << "cube is " << numberCubed << endl;
    
     cout << cube(-3) << endl;
@@ -25,8 +25,8 @@ int main(int argc, char const *argv[]) {
 } /// main
 
 //function definition
-int cube(int value){// value is a formal parameter
+int cube(int value){// Function Heading: value is a formal parameter
     int result;  //local variable
     result = value * value * value;
-    return result;
+    return result;  //returned value
 }
