@@ -69,7 +69,7 @@ Student getStudentData(){
     return temp;
 }
 
-void updatScore(Student &s){
+void updateScore(Student &s){
     s.score += 10;
 }
 
