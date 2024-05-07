@@ -1,52 +1,33 @@
 /**
  *   @file: wages.cc
  * @author: Nasseef Abukamail
- *   @date: January 29, 2024
- *  @brief: Calulate the wages for an hourly employee. Given the number
- *          hours worked and the rate of pay.
+ *   @date: May 11, 2020
+ *  @brief: Add Description
  */
 
-#include <cstdlib>
-#include <iomanip>
 #include <iostream>
+#include <iomanip>
+#include <cstdlib>
 using namespace std;
 
-/// Constants and function prototypes
+///function prototypes
 
 int main(int argc, char const *argv[]) {
-    double rate, hours, wages;
-    cout << fixed << setprecision(2);
-    char answer;
-    /// 1. declare variable (memory locations for data)
 
-    /// 2. Input data
-    do {
-        cout << "Enter number of hours: ";
-        cin >> hours;
-        if (hours < 0 || hours > 60)  /// testing for invalid hours
-        {
-            cout << "Error: Invalid number of hours" << endl;
-            exit(0);
-        }
+    //1. Declare variables
+    double hours, rate, pay;
 
-        cout << "Enter the rate: ";
-        cin >> rate;
-        if (rate < 10 || rate > 50)  // assume rate range is $10-$50
-        {
-            cout << "Error: Invalid pay rate" << endl;
-            exit(0);
-        }
+    //2. Input the values
+    cout << "Enter the hourly rate: ";
+    cin >> rate;
 
-        /// 3. Calculate the wages
-        wages = rate * hours;
+    cout << "Enter the number of hours: ";
+    cin >> hours;
 
-        /// 4. output results (wages)
-        cout << "Number of hours: " << hours << endl;
-        cout << "The hourly rate: $" << rate << endl;
-        cout << "     Your wages: $" << wages << endl;
-        cout << "More calculations (y/n)? ";
-        cin >> answer;
-    }while (answer == 'y');
-            ;
-        return 0;
-    }  /// main
+    //3. Calculate the pay
+    pay = hours * rate;
+
+    //4. Display/output the pay
+    cout << "Your weekly pay is " << pay << endl;
+    return 0;
+}/// main

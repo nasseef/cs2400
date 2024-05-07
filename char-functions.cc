@@ -1,30 +1,50 @@
 /**
- *   @file: char-functions.cc
+ *   @file: functions-examples-2.cc
  * @author: Nasseef Abukamail
- *   @date: February 21, 2024
+ *   @date: May 26, 2020
  *  @brief: Add Description
  */
 
-#include <cstdlib>
-#include <iomanip>
 #include <iostream>
+#include <iomanip>
+#include <cstdlib>
 #include <cctype>
+
 using namespace std;
 
-/// Constants and function prototypes
+///function prototypes
 
 int main(int argc, char const *argv[]) {
-    char ch;
-    do {
-        cout << "enter a character: ";
-        cin >> ch;
-        cout << "isalpha: " << isalpha(ch) << endl;
-        cout << "isalnum: " << isalnum(ch) << endl;
-        cout << "isdigit: " << isdigit(ch) << endl;
-        cout << "isupper: " << isupper(ch) << endl;
-        cout << "islower: " << islower(ch) << endl;
 
-    } while (ch != 'q');
+    char ch = '8';
 
+    if (isalpha(ch))
+    {
+        cout << "Character is a letter" << endl;
+    }
+
+    if (isupper(ch))
+    {
+        cout << "Character is an upper case letter" << endl;
+    }
+
+    if (islower(ch))    
+    {
+        cout << "Character is a lower case letter" << endl;
+    }
+    
+    if (isdigit(ch))
+    {
+        cout << "Character is a digit" << endl;
+    }
+
+    if (isspace(ch))
+    {
+        cout << "Character is a whitespace" << endl;
+    }
+    
+    
+    
+    
     return 0;
-}  /// main
+}/// main

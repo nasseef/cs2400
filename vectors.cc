@@ -1,8 +1,8 @@
 /**
  *   @file: vectors.cc
  * @author: Nasseef Abukamail
- *   @date: March 20, 2024
- *  @brief: Add Description
+ *   @date: June 3, 2020
+ *  @brief: Example to demonstrate vectors
  */
 
 #include <iostream>
@@ -12,47 +12,41 @@
 
 using namespace std;
 
-///Constants and function prototypes
-void printNumbers(vector<int> numbers);
-vector<int> updateByOne(vector<int> &numbers);
+///function prototypes
+double getTotal(const vector<double> &v);
+
 
 int main(int argc, char const *argv[]) {
-    vector<int> numbers;
-    cout << numbers.empty() << endl;
+    vector <double> nums; 
+    cout << "size = " << nums.size() << endl;
+    nums.push_back(30);
+    nums.push_back(40);
+    nums.push_back(50);
+    nums.pop_back();
 
-    numbers.push_back(4);
-    cout << numbers.empty() << endl;
-
-    numbers.push_back(5);
-    numbers.push_back(2);
-    numbers.push_back(9);
-    cout << "Size = " << numbers.size() << endl;
-    numbers.erase(numbers.begin() + 1);
-    printNumbers(numbers);
-    auto updatedNumbers = updateByOne(numbers);
-    printNumbers(updatedNumbers);
-    updatedNumbers.insert(updatedNumbers.begin(), 99);
-    printNumbers(updatedNumbers);
-
-    vector<string> names = {"Susan", "Jim", "John", "Kate"};
-    int lastIndex = names.at(0).length() - 1;
-
-    cout << names.at(0).at(lastIndex) << endl;
-    return 0;
-} /// main
-
-void printNumbers(vector<int> numbers){
-    for (size_t i = 0; i < numbers.size(); i++)
-    {
-        cout << numbers.at(i) << " ";
-    }
-    cout << endl;
     
-}
-vector<int> updateByOne(vector<int> &numbers){
-    for (size_t i = 0; i < numbers.size(); i++)
+    for (size_t i = 0; i < 5; i++)
     {
-        numbers.at(i)++;
+        nums.push_back(i * i);
     }
-    return numbers;
+    nums.at(2) = 70;
+    nums[3] = 90;
+    nums.insert(nums.begin()+1, 60);
+    cout << "First element: " << nums.at(1) << endl;
+    double total = getTotal(nums);
+    cout << "Total: " << total << endl;
+    /*add code*/
+    vector <string> names;
+    names.push_back("Bob");
+    cout << "First name: " << names.front() << endl;
+
+    return 0;
+}/// main
+
+double getTotal(const vector<double> &v) {
+	double total = 0;
+	for(size_t i = 0; i < v.size(); i++){
+		total += v.at(i);
+	}
+	return total;
 }
