@@ -16,6 +16,7 @@ int main(int argc, char const *argv[]) {
 
     double total = 0;
     double score;
+    /// this loop quits when the input fails
     cout << "Enter your numbers followed by q: ";
     cin >> score;
     while(!cin.fail()){
@@ -23,6 +24,7 @@ int main(int argc, char const *argv[]) {
         
         cin >> score;
     }
+    ///take care of the failure to continue with the program
     if (cin.fail())
     {
        cin.clear(); //clears the fail flag
