@@ -15,11 +15,11 @@ using namespace std;
 /// Constants and function prototypes
 
 int main(int argc, char const *argv[]) {
+    //Declare stream objects
     ifstream inputStream;
     ofstream outStream;
 
-    outStream.open("numbers-copy.txt");
-    //check for failure
+    
 
     // string filename;
     // cin >> filename;
@@ -31,6 +31,13 @@ int main(int argc, char const *argv[]) {
         exit(0);
     }
     
+    //open the output file
+    outStream.open("numbers-copy.txt");
+    if (outStream.fail())
+    {
+        cout << "Error: file is not accessible" << endl;
+        exit(0);
+    }
     char ch;
     inputStream.get(ch);
     while (!inputStream.eof()) {
@@ -42,3 +49,4 @@ int main(int argc, char const *argv[]) {
     outStream.close();
     return 0;
 }  /// main
+
