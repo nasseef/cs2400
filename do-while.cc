@@ -16,7 +16,7 @@ int main(int argc, char const *argv[]) {
 
     char answer;
     do
-    {
+    {      
         cout << "Hello" << endl;
         cout << "Do you want to continue (y/n)? ";
         cin >> answer;
