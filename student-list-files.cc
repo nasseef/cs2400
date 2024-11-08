@@ -9,6 +9,8 @@
 #include <iomanip>
 #include <cstdlib>
 #include <vector>
+#include <fstream>
+
 using namespace std;
 
 struct Student
@@ -22,23 +24,15 @@ struct Student
 void printStudent(const Student &s);
 void inputStudent(Student &s);
 Student inputStudent();
+void printAllStudents(const vector<Student> &allStudents);
+void loadData(vector<Student> &allStudents);
 
 int main(int argc, char const *argv[]) {
 
     vector<Student> allStudents;
-
-    Student s1;
-    printStudent(s1);
-    inputStudent(s1);
-    printStudent(s1);
-    Student s2 = {"Bob", 123, 55.6};
-    printStudent(s2);
-    Student s3 = inputStudent();
-    printStudent(s3);
-    allStudents.push_back(s1);
-    allStudents.push_back(s2);
-    allStudents.push_back(s3);
-    
+    //load all student data from a file
+    loadData(allStudents);
+    printAllStudents(allStudents);
 
     return 0;
 } /// main
@@ -66,4 +60,32 @@ Student inputStudent(){
     cout << "Enter student score: ";
     cin >> s.score;
     return s;
+}
+
+void printAllStudents(const vector<Student> &allStudents){
+    for (size_t i = 0; i < allStudents.size(); i++)
+    {
+        printStudent(allStudents.at(i));
+    }
+}
+
+void loadData(vector<Student> &allStudents){
+    ifstream ins;
+    ins.open("students.txt");
+    if (ins.fail())
+    {
+        cout << "Error: file not found" << endl;
+        exit(0);
+    }
+    int sId;
+    double sScore;
+    string sName;
+    ins >> sName >> sId >> sScore;
+    while (!ins.eof()){
+        Student s = {sName, sId, sScore};
+        allStudents.push_back(s);
+        ins >> sName >> sId >> sScore;
+    }
+    ins.close();
+
 }
