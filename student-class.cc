@@ -14,6 +14,10 @@ using namespace std;
 class Student
 {
  public:
+    //constructors
+    Student();
+    Student(int newId, string newName);
+
     //setters or mutators
     void setId(int newId);
     void setName(string newName);
@@ -24,6 +28,8 @@ class Student
     string getName();
     double getScore();
 
+    //helper functions
+    void output();
  private:
     string name;
     int id;
@@ -37,20 +43,34 @@ class Student
 int main(int argc, char const *argv[]) {
 
     Student s1;
-    
-
-    s1.setId(-123);
-    cout << "Id: " << s1.getId() << endl;
-
-    s1.setName("");
-    cout << "Name: " << s1.getName() << endl;
-    s1.setScore(-58);
-    cout << "Score: " << s1.getScore() << endl;
-    //printStudent(s1);
-    
+    s1.output();
+    Student s2(999, "Sue");
+    s2.output();
 
     return 0;
 } /// main
+
+Student::Student(){
+    id = 0;
+    name = "N/A";
+    score = -1;
+}
+
+    
+Student::Student(int newId, string newName){
+    if (newId < 0 || newName == "")
+    {
+        id = 0;
+        name = "N/A";
+        score = -1;
+    }
+    else {
+        id = newId;
+        name = newName;
+        score = -1;
+    }
+    
+}
 
 //getters
 int Student::getId(){
@@ -70,17 +90,11 @@ void Student::setId(int newId){
     {
         id = newId;
     }
-    else {
-        id = 0;
-    }
 }
 void Student::setName(string newName){
     if (newName != "")
     {
        name = newName;
-    }
-    else {
-        name = "N/A";
     }
     
 }
@@ -90,16 +104,13 @@ void Student:: setScore(double newScore){
     {
         score = newScore;
     }
-    else {
-        score = -1;
-    }
     
 }
-// void printStudent(const Student &s){
-//     cout << " Name: " << s.name << endl;
-//     cout << "   ID: " << s.id << endl;
-//     cout << "Score: " << s.score << endl;
-// }
+void Student::output(){
+    cout << " Name: " << name << endl;
+    cout << "   ID: " << id << endl;
+    cout << "Score: " << score << endl;
+}
 
 
 
