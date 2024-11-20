@@ -10,17 +10,20 @@
 #include <cstdlib>
 #include <vector>
 #include "student.h"
+#include "student.h"
 using namespace std;
 
 
 ///Constants and function prototypes
 //void printStudent(const Student &s);
 
+
+
 int main(int argc, char const *argv[]) {
 
     Student s1;
     s1.output();
-    Student s2(999, "Sue");
+    Student s2(999, "Chris");
     s2.output();
 
     return 0;

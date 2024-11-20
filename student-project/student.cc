@@ -10,8 +10,9 @@ Student::Student(){
     name = "N/A";
     score = -1;
 }
+//second constructor
 
-    
+
 Student::Student(int newId, string newName){
     if (newId < 0 || newName == "")
     {
