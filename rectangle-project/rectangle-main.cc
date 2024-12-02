@@ -8,6 +8,8 @@
 #include <cstdlib>
 #include <iomanip>
 #include <iostream>
+#include <fstream>
+
 using namespace std;
 
 class Rectangle {
@@ -16,8 +18,8 @@ public:
     Rectangle(double newLength, double newWidth);
 
     //getters
-    double getLength();
-    double getWidth();
+    double getLength() const;
+    double getWidth() const;
 
     //setters
     void setLength(double newLength);
@@ -29,8 +31,11 @@ public:
     double perimeter();
     bool isSquare();
     friend bool operator ==(const Rectangle &r1, const Rectangle &r2);
-    friend ostream & operator <<(ostream &outs, const Rectangle &r);
-
+    friend ostream & operator <<(ostream &out, const Rectangle &r);
+    
+    /// Implement the following function
+    friend istream & operator >>(istream &inp, Rectangle &r);
+            
 private:
     double length;
     double width;
@@ -38,22 +43,21 @@ private:
 
 /// Constants and function prototypes
 
-
 int main(int argc, char const *argv[]) { 
-    Rectangle r1;
-    cout << r1;
-    cout << endl;
-    Rectangle r2(9, 3);
-    //r2.output();
-    cout << "Rectangle 2: " << r2 << endl;
-    cout << endl;
+    Rectangle r1(20, 10);
+    cout << r1 << endl;
+    
+    Rectangle r2(20, 10);
+    cout << r2;
 
-    if (r1 == r2)  
+    cout << endl;
+    cout << r1 << r2 << endl;
+    if (r1 == r2)
     {
-        cout << "Equal" << endl;
+        cout << "Yes they are equal" << endl;
     }
-    else {
-        cout << "Not equal" << endl;
+    else{
+        cout << "No they are not equal" << endl;
     }
     
     return 0; 
@@ -74,26 +78,30 @@ Rectangle::Rectangle(double newLength, double newWidth){
     
 }
 
-ostream & operator <<(ostream &outs, const Rectangle &r)
-{
-    outs << "(" << r.length << ", " << r.width << ")";
-    return outs;
-}
 
-double Rectangle::getLength(){
+double Rectangle::getLength() const{
     return length;
 }
-double Rectangle::getWidth(){        
+double Rectangle::getWidth() const{        
     return width;
 }
 
-bool operator ==(const Rectangle &r1, const Rectangle &r2){
-
-    return r1.length == r2.length && r1.width == r2.width;
-
-    // if (r1.length == r2.length && r1.width == r2.width)
-    // {
-    //     return true;
-    // }
-    // return false;
+ostream & operator <<(ostream &out, const Rectangle &r){
+    out << "(" << r.length << "x" << r.width << ")";
+    return out;
 }
+
+
+
+
+
+
+bool  operator ==(const Rectangle &r1, const Rectangle &r2){
+
+    if (r1.length == r2.length && r1.width == r2.width)
+    {
+        return true;
+    }
+    return false;
+}
+
