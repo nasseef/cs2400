@@ -25,13 +25,14 @@ int main(int argc, char const *argv[]) {
         exit(0);
     }
     
-    outStream.open("output.txt", ios::app);
+    outStream.open("output.txt");
     if (outStream.fail())
     {
         cout << "Error: failed to open output file" << endl;
         exit(0);
     }
 
+   
     ///step 4 use the stream 
     char ch;
     inStream.get(ch);
