@@ -12,6 +12,10 @@ using namespace std;
 
 class Student{
 public:
+    //Constructors
+    Student(); //default constructor
+    Student(int newId, string newName);
+
     //getters/accessors
     int getId();
     string getName();
@@ -35,6 +39,12 @@ int main(int argc, char const *argv[]) {
     Student s1;
 
     s1.output();
+
+    Student s2(123, "John");
+    s2.setScore(50);
+
+    s2.setScore(-55);
+    s2.output();
     // s1.setId(-12);
     // s1.setName("");
     // s1.setScore(-55);
@@ -44,12 +54,31 @@ int main(int argc, char const *argv[]) {
     return 0;
 } /// main
 
+Student::Student(){//default constructor
+    id = 0;
+    name = "N/A";
+    score = -1;
+} 
+Student::Student(int newId, string newName){
+    id = 0;
+    if (newId > 0)
+    {
+       id = newId;
+    }
+    name = "N/A";
+    if (newName != "")
+    {
+        name = newName;
+    }
+    score = -1;
+}
+
 int Student::getId(){
     return id;
 }
 
 void Student::setId(int newId){
-    id = 0;
+   
     if (newId > 0)
     {
        id = newId;
@@ -65,7 +94,7 @@ double Student::getScore(){
 }
 
 void Student::setName(string newName){
-    name = "N/A";
+   
     if (newName != "")
     {
         name = newName;
@@ -73,7 +102,7 @@ void Student::setName(string newName){
     
 }
 void Student::setScore(double newScore){
-    score = -1;
+    
     if (newScore >= 0)
     {
         score = newScore;
