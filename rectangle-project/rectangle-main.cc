@@ -32,6 +32,7 @@ public:
     bool isSquare();
     
     friend bool operator ==(Rectangle r1, Rectangle r2);
+    friend ostream & operator <<(ostream &out, Rectangle r);
             
 private:
     double length;
@@ -44,11 +45,11 @@ private:
 int main(int argc, char const *argv[]) { 
     Rectangle r1(20, 10);
     
-    r1.output();
+    cout << r1 << "Done" << endl;
     cout << endl;
     Rectangle r2(20, 10);
     
-    r2.output();
+    cout << r2;
     cout << endl;
 
     if (r1 == r2)
@@ -84,8 +85,9 @@ double Rectangle::getWidth() const{
     return width;
 }
 
-void Rectangle::output(){
-    cout << "(" << length << "x" << width << ")";
+ostream & operator <<(ostream &out, Rectangle r){
+    out << "(" << r.length << "x" << r.width << ")";
+    return out;
 }
 
 bool operator ==(Rectangle r1, Rectangle r2){
