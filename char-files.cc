@@ -26,21 +26,20 @@ int main(int argc, char const *argv[]) {
         exit(0);
     }
     /// 4 use it
-    // char ch;
-    // inStream.get(ch);
-    // while (!inStream.eof()) {
-    //     cout << ch;
-    //     inStream.get(ch);
-    // }
-    // cout << endl;
-    string line;
-    getline(inStream, line);
-
-    while (!inStream.eof()) {
-        cout << line << endl;
-        getline(inStream, line);
+    char ch;
+    
+    while (inStream.get(ch)) {
+        cout << ch;
     }
     cout << endl;
+    // string line;
+    // getline(inStream, line);
+
+    // while (!inStream.eof()) {
+    //     cout << line << endl;
+    //     getline(inStream, line);
+    // }
+    // cout << endl;
 
     /// 5
     inStream.close();
