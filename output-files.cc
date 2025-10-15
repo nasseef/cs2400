@@ -17,13 +17,21 @@ using namespace std;
 /// Constants and function prototypes
 void copy(ifstream &inp, ofstream &out);
 int main(int argc, char const *argv[]) {
+
+    //check that argc is the right value
+    if (argc != 3)
+    {
+        cout << "Error: supply two file names" << endl;
+        cout << "Usage: ./a.out file1 file2" << endl;
+        exit(0);
+    }
+    
     /// 2
     ifstream inStream;
     ofstream outStream;
     /// 3
     string inFileName;
-    cout << "Enter an input file name: ";
-    cin >> inFileName;
+    inFileName = argv[1];
 
     inStream.open(inFileName);
     if (inStream.fail()) {
@@ -32,8 +40,9 @@ int main(int argc, char const *argv[]) {
     }
 
     string outFileName;
-    cout << "Enter an output file name: ";
-    cin >> outFileName;
+    outFileName = argv[2];
+    // cout << "Enter an output file name: ";
+    // cin >> outFileName;
 
     outStream.open(outFileName);
     if (outStream.fail())
