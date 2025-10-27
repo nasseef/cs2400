@@ -58,12 +58,14 @@ int main(int argc, char const *argv[]) {
 } /// main
 
 void printNumbers(vector<int> numbers){
-    for (size_t i = 0; i < numbers.size(); i++)
-    {
-        cout << numbers.at(i) << " ";
+    // for (size_t i = 0; i < numbers.size(); i++)
+    // {
+    //     cout << numbers.at(i) << " ";
+    // }
+    for(int value : numbers){
+        cout << value << " ";
     }
     cout << endl;
-    
 }
 vector<int> updateByOne(vector<int> &numbers){
     for (size_t i = 0; i < numbers.size(); i++)
