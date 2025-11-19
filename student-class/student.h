@@ -1,3 +1,5 @@
+#ifndef STUDENT_H
+#define STUDENT_H
 #include <cstdlib>
 #include <fstream>
 #include <iostream>
@@ -24,3 +26,4 @@ class Student {
     int id;
     double score;
 };
+#endif
