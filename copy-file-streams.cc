@@ -16,22 +16,32 @@ void copy(ifstream &inStream, ofstream &outStream);
 
 int main(int argc, char const *argv[]) {
     ///Step 2 stream object delaration
-    string inputFile, outputFile;
-    cout << "Enter the input file name: ";
-    cin >> inputFile;
-    cout << "Enter the output file name: ";
-    cin >> outputFile;
+    // string inputFile, outputFile;
+    // cout << "Enter the input file name: ";
+    // cin >> inputFile;
+    // cout << "Enter the output file name: ";
+    // cin >> outputFile;
+    string inputFN;
+    string outputFN;
+    if (argc != 3)
+    {
+        cout << "Usage: ./copy file1 file2" << endl;
+        exit(0);
+    }
+    
+    inputFN = argv[1];
+    outputFN = argv[2];
     ifstream inStream;
     ofstream outStream;
     ///step 3 connect the stream object to data file
-    inStream.open(inputFile);
+    inStream.open(inputFN);
     if (inStream.fail())
     {
         cout << "Error: file not found" << endl;
         exit(0);
     }
     
-    outStream.open(outputFile);
+    outStream.open(outputFN);
     if (outStream.fail())
     {
         cout << "Error: failed to open output file" << endl;
