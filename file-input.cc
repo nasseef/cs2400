@@ -20,7 +20,7 @@ int main(int argc, char const *argv[]) {
     ifstream ins;
 
     //3
-    ins.open("data.txt");
+    ins.open("charData.txt");
     //important
     if (ins.fail())
     {

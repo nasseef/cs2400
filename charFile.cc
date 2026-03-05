@@ -37,20 +37,22 @@ int main(int argc, char const *argv[]) {
     //     cout << ch;
     //     ins.get(ch);
     // }
-    
+    ofstream outs;
+    outs.open("output.txt");
+    //check for errors
     string line;
-    getline(ins, line, '!');
-    cout << line << endl;
-    return 0;
+
+    getline(ins, line);
     while (!ins.eof())
     {
-        cout << line << endl;
+        outs << line << endl;
         getline(ins, line);
         
     }
     
     //5
     ins.close();
+    outs.close();
     /*add code*/
     return 0;
 } /// main
