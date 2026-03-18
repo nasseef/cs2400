@@ -23,6 +23,7 @@ int main(int argc, char const *argv[]) {
 
     printArray(numbers, count);
    
+    
     //string names[] = {"Sue", "Bob", "Lucy"}; //size is implied as 3
 
     return 0;
