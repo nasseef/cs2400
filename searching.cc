@@ -69,7 +69,9 @@ int binSearch(const int data[], int count, int target) {
             last = mid - 1;
         else
             first = mid + 1;
-        
+        cout << "first: " << first << endl;
+        cout << "  mid: " << mid << endl;
+        cout << " last: " << last << endl;
     }
     return -1;  // target not found
 }
