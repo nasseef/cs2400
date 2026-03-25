@@ -39,7 +39,9 @@ int main(int argc, char const *argv[]) {
     updateByOne(numbers);
     printNumbers(numbers);
 
-    return 0;
+   
+    
+    
     numbers.erase(numbers.begin() + 1);
 
     printNumbers(numbers);
@@ -51,6 +53,12 @@ int main(int argc, char const *argv[]) {
     
     printNumbers(updatedNumbers);
 
+    //vector initialization
+    vector<int> initialNumbers = {4, 5, 2, 9, 33, 44};
+    vector<int> moreNumbers(5, 99); // 5 elements initialized to 99
+    vector<int> startingNumbers(5, 0); // 5 elements default-initialized to 0
+
+    
     vector<string> names = {"Susan", "Jim", "John", "Kate"};
     int lastIndex = names.at(0).length() - 1;
 
