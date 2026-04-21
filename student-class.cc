@@ -45,11 +45,16 @@ int main(int argc, char const *argv[]) {
     Student s1; //automatically calls the default constructor
     s1.setId(5);
     //cout << s1.getId() << endl;
-    s1.setId(-100);
+    s1.setId(123);
+    s1.setName("Sandy");
+    s1.setScore(95.5);
     s1.output();
-    
+    cout << "------------------" << endl;
     Student s2(100); //call the second constructor
+    s2.setName("John");
+    s2.setScore(88.5);
     s2.output();
+
     return 0;
 } /// main
 
@@ -80,6 +85,26 @@ void Student::setId(int newId){
     
 }
 
+string Student::getName(){
+    return name;
+}
+double Student::getScore(){
+    return score;
+}   
+
+void Student::setName(string newName){
+    if (newName != "")
+    {
+        name = newName;
+    }
+    
+}
+void Student::setScore(double newScore){
+    if (newScore >= 0)
+    {
+        score = newScore;
+    }
+}
 
 void Student::output(){
     cout << " Name: " << name << endl;
