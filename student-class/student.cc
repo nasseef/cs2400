@@ -5,7 +5,7 @@
 
 using namespace std;
 
-
+//Student class implementation
 Student::Student(){
     id = 0;
     name = "N/A";
